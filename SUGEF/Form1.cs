@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SUGEF.Helpers;
 using System.Windows.Forms;
 
 namespace SUGEF
@@ -15,6 +8,9 @@ namespace SUGEF
         public Form1()
         {
             InitializeComponent();
+            new SetPlaceholder(this.inputLogin,"Insira seu Login");
+            new SetPlaceholder(this.inputPassword, "Insira sua Senha");
+            new SetButtonHover(this.loginButton);
         }
     }
 }

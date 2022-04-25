@@ -1,6 +1,6 @@
 ﻿namespace SUGEF
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label3 = new System.Windows.Forms.Label();
             this.inputLogin = new System.Windows.Forms.TextBox();
             this.inputPassword = new System.Windows.Forms.TextBox();
@@ -78,7 +78,7 @@
             // gradientSidebar1
             // 
             this.gradientSidebar1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.gradientSidebar1.ColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(120)))), ((int)(((byte)(222)))));
+            this.gradientSidebar1.ColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(222)))));
             this.gradientSidebar1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
             this.gradientSidebar1.Controls.Add(this.label1);
             this.gradientSidebar1.Controls.Add(this.label2);
@@ -99,7 +99,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Name = "label2";
             // 
-            // Form1
+            // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -111,7 +111,8 @@
             this.Controls.Add(this.gradientSidebar1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "LoginForm";
             this.gradientSidebar1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

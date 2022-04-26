@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SUGEF.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -13,7 +14,18 @@ namespace SUGEF
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            if(new ConnectDB().Connect())
+            {
+                Application.Run(new LoginForm());
+            }
+            else
+            {
+            MessageBox.Show("Não foi possível conectar-se ao banco, portanto, o App não será inicializado! Entre em contato com o desenvolvedor!!!",
+             "Erro de conexão!",
+             MessageBoxButtons.OK,
+             MessageBoxIcon.Error);
+            }
+         
 
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]

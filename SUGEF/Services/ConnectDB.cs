@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using MySql.Data.MySqlClient;
 
 namespace SUGEF.Services
@@ -22,7 +23,11 @@ namespace SUGEF.Services
         {
             try{
                 MySqlCommand command = new MySqlCommand(sqlQuery,connect);
-                command.ExecuteReader();
+                MySqlDataReader obj =  command.ExecuteReader();
+                while (obj.Read())
+                {
+                    Debug.WriteLine(obj.GetString(0).ToString());
+                }
                 return true; 
             }
             catch (Exception ex)

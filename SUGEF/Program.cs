@@ -1,6 +1,7 @@
 ﻿using SUGEF.Services;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -14,8 +15,10 @@ namespace SUGEF
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if(new ConnectDB().Connect())
+            ConnectDB connection = new ConnectDB();
+            if (connection.Connect())
             {
+                connection.InsertAction("select * from student");
                 Application.Run(new LoginForm());
             }
             else

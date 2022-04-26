@@ -130,10 +130,13 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 237</value>
+    <value>359, 190</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>104, 16</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -157,10 +160,13 @@
     <value>Malgun Gothic, 12pt</value>
   </data>
   <data name="inputLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 260</value>
+    <value>362, 208</value>
+  </data>
+  <data name="inputLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="inputLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>670, 34</value>
+    <value>536, 29</value>
   </data>
   <data name="inputLogin.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -181,10 +187,13 @@
     <value>Malgun Gothic, 12pt</value>
   </data>
   <data name="inputPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 372</value>
+    <value>362, 298</value>
+  </data>
+  <data name="inputPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="inputPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>670, 34</value>
+    <value>536, 29</value>
   </data>
   <data name="inputPassword.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -211,10 +220,13 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 349</value>
+    <value>359, 279</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 20</value>
+    <value>107, 16</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,10 +253,13 @@
     <value>NoControl</value>
   </data>
   <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 536</value>
+    <value>566, 429</value>
+  </data>
+  <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 59</value>
+    <value>123, 47</value>
   </data>
   <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -271,13 +286,16 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 0</value>
+    <value>10, 0</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 72</value>
+    <value>206, 58</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -307,13 +325,16 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 72</value>
+    <value>10, 58</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 89</value>
+    <value>206, 71</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -343,7 +364,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="gradientSidebar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 856</value>
+    <value>232, 685</value>
   </data>
   <data name="gradientSidebar1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -364,10 +385,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>120, 120</value>
+    <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1332, 853</value>
+    <value>1066, 682</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

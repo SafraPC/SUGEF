@@ -74,6 +74,7 @@
             this.loginButton.ForeColor = System.Drawing.Color.Green;
             this.loginButton.Name = "loginButton";
             this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // gradientSidebar1
             // 
@@ -103,6 +104,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ControlBox = false;
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.inputPassword);
             this.Controls.Add(this.label4);

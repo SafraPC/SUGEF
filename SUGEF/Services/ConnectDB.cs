@@ -21,6 +21,7 @@ namespace SUGEF.Services
         }
         public bool InsertAction(string sqlQuery)
         {
+            //TODO: FINISH IT.
             try{
                 MySqlCommand command = new MySqlCommand(sqlQuery,connect);
                 MySqlDataReader obj =  command.ExecuteReader();

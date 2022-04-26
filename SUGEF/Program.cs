@@ -18,7 +18,6 @@ namespace SUGEF
             ConnectDB connection = new ConnectDB();
             if (connection.Connect())
             {
-                connection.InsertAction("select * from student");
                 Application.Run(new LoginForm());
             }
             else

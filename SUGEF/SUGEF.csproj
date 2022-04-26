@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\NoAuth\LoginController.cs" />
+    <Compile Include="Controller\Student\StudentController.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
     <Compile Include="View\NoAuth\LoginForm.cs">
@@ -104,6 +105,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Components\GradientSidebar.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Student\InitStudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Student\InitStudentView.Designer.cs">
+      <DependentUpon>InitStudentView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\NoAuth\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -120,6 +127,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Student\InitStudentView.resx">
+      <DependentUpon>InitStudentView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -134,10 +144,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\Director\" />
-    <Folder Include="View\Professor\" />
-    <Folder Include="View\Student\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,7 +44,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 856);
+            this.ClientSize = new System.Drawing.Size(903, 856);
             this.Controls.Add(this.gradientSidebar1);
             this.MaximizeBox = false;
             this.Name = "InitStudentView";

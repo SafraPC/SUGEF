@@ -1,4 +1,5 @@
 ﻿using SUGEF.Controller.Student;
+using SUGEF.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,8 +19,8 @@ namespace SUGEF.View.Student
         public InitStudentView(StudentController student)
         {
             InitializeComponent();
+            new AutomatizeScreen(this, student.GetStudentName());
             this.student = student;
-            this.Text += " " + student.GetStudentName() + "!";
         }
 
         private void InitStudentView_FormClosing(object sender, FormClosingEventArgs e)

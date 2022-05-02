@@ -36,16 +36,18 @@
             this.gradientSidebar1.ColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(222)))));
             this.gradientSidebar1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
             this.gradientSidebar1.Location = new System.Drawing.Point(0, 0);
+            this.gradientSidebar1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientSidebar1.Name = "gradientSidebar1";
             this.gradientSidebar1.Size = new System.Drawing.Size(290, 856);
             this.gradientSidebar1.TabIndex = 0;
             // 
             // InitStudentView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 856);
+            this.ClientSize = new System.Drawing.Size(1338, 864);
             this.Controls.Add(this.gradientSidebar1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "InitStudentView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

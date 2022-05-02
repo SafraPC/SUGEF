@@ -104,7 +104,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ControlBox = false;
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.inputPassword);
             this.Controls.Add(this.label4);

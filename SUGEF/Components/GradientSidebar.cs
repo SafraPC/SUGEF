@@ -20,7 +20,7 @@ namespace SUGEF.Utils
             graph.FillRectangle(lgb,this.ClientRectangle);
             base.OnPaint(e);
             this.Location = new Point(0, 0);
-            this.Size = new Size(290, 856);
+            this.Size = new Size(290, 720);
         }
 
     }

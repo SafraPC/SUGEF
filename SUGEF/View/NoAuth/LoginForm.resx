@@ -130,13 +130,13 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 238</value>
+    <value>426, 199</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>104, 16</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -160,13 +160,13 @@
     <value>Malgun Gothic, 12pt</value>
   </data>
   <data name="inputLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 260</value>
+    <value>429, 230</value>
   </data>
   <data name="inputLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="inputLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>670, 34</value>
+    <value>536, 29</value>
   </data>
   <data name="inputLogin.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -187,13 +187,13 @@
     <value>Malgun Gothic, 12pt</value>
   </data>
   <data name="inputPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 372</value>
+    <value>429, 316</value>
   </data>
   <data name="inputPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="inputPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>670, 34</value>
+    <value>536, 29</value>
   </data>
   <data name="inputPassword.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -220,13 +220,13 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 349</value>
+    <value>426, 285</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 20</value>
+    <value>107, 16</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -253,13 +253,13 @@
     <value>NoControl</value>
   </data>
   <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 536</value>
+    <value>631, 395</value>
   </data>
   <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 59</value>
+    <value>123, 47</value>
   </data>
   <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -286,7 +286,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 0</value>
+    <value>45, 21</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -295,7 +295,7 @@
     <value>No</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 72</value>
+    <value>206, 58</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -325,7 +325,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 72</value>
+    <value>45, 90</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -334,7 +334,7 @@
     <value>No</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 89</value>
+    <value>206, 71</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -385,10 +385,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>120, 120</value>
+    <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1332, 852</value>
+    <value>1060, 677</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

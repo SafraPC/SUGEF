@@ -11,8 +11,7 @@ namespace SUGEF.Helpers
     {
         private void AutomatizeForm(Form actualForm)
         {
-            actualForm.Size = new System.Drawing.Size(1354, 903);
-            actualForm.ImeMode = ImeMode.NoControl;
+            actualForm.Size = new System.Drawing.Size(1080, 720);
             actualForm.StartPosition = FormStartPosition.CenterScreen;
         }
 

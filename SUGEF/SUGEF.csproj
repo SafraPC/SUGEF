@@ -92,6 +92,7 @@
     <Compile Include="Controller\NoAuth\LoginController.cs" />
     <Compile Include="Controller\Student\StudentController.cs" />
     <Compile Include="Helpers\AutomatizeScreen.cs" />
+    <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
     <Compile Include="View\NoAuth\LoginForm.cs">

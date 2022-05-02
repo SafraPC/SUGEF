@@ -20,7 +20,7 @@ namespace SUGEF
         {
             StudentController student = new StudentController(0,"Safra","leandrosafra.jconectada@gmail.com","20");
             this.Hide();
-            new InitStudentView(student).Show();
+            new ShowForm(this,new InitStudentView(student));
         }
     }
 }

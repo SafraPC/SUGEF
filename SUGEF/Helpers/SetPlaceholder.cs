@@ -8,6 +8,7 @@ namespace SUGEF.Helpers
     {
         readonly TextBox textBox;
         readonly string placeholder;
+   
         public SetPlaceholder(TextBox textBox,string placeholder)
         {
             this.textBox = textBox;

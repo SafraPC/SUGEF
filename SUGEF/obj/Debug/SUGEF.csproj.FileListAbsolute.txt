@@ -88,3 +88,4 @@ C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Runtime.Com
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.CopyComplete
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.InitStudentView.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.InitStudentView.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.Components.ItemMenu.resources

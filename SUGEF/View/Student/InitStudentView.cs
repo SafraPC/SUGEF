@@ -20,11 +20,8 @@ namespace SUGEF.View.Student
         {
             InitializeComponent();
             new AutomatizeScreen(this, student.GetStudentName());
+            new SetHover().setHover(this.turmasPanel);
             this.student = student;
-        }
-
-        private void InitStudentView_FormClosing(object sender, FormClosingEventArgs e)
-        {
         }
     }
 }

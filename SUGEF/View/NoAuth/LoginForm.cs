@@ -11,6 +11,7 @@ namespace SUGEF
         public LoginForm()
         {
             InitializeComponent();
+            new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
             new SetPlaceholder(this.inputLogin,"Insira seu Login");
             new SetPlaceholder(this.inputPassword, "Insira sua Senha");
             new SetButtonHover(this.loginButton, Color.Green);

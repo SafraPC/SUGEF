@@ -13,6 +13,7 @@ namespace SUGEF.Helpers
         {
             actualForm.Size = new System.Drawing.Size(1080, 720);
             actualForm.StartPosition = FormStartPosition.CenterScreen;
+            actualForm.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         public AutomatizeScreen(Form actualForm)

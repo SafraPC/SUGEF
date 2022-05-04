@@ -89,11 +89,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\ItemMenu.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Components\ItemSidebar.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Components\ItemMenu.Designer.cs">
-      <DependentUpon>ItemMenu.cs</DependentUpon>
+    <Compile Include="Components\ItemSidebar.Designer.cs">
+      <DependentUpon>ItemSidebar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\NoAuth\LoginController.cs" />
     <Compile Include="Controller\Student\StudentController.cs" />
@@ -121,9 +121,6 @@
     <Compile Include="View\Student\InitStudentView.Designer.cs">
       <DependentUpon>InitStudentView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Components\ItemMenu.resx">
-      <DependentUpon>ItemMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\NoAuth\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

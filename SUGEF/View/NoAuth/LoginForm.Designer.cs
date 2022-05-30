@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label3 = new System.Windows.Forms.Label();
-            this.inputLogin = new System.Windows.Forms.TextBox();
-            this.inputPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
+            this.inputLogin = new System.Windows.Forms.TextBox();
+            this.inputPassword = new System.Windows.Forms.TextBox();
             this.gradientSidebar1 = new SUGEF.Utils.GradientSidebar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,20 +45,6 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Name = "label3";
-            // 
-            // inputLogin
-            // 
-            this.inputLogin.BackColor = System.Drawing.Color.White;
-            this.inputLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.inputLogin, "inputLogin");
-            this.inputLogin.Name = "inputLogin";
-            // 
-            // inputPassword
-            // 
-            this.inputPassword.BackColor = System.Drawing.Color.White;
-            this.inputPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.inputPassword, "inputPassword");
-            this.inputPassword.Name = "inputPassword";
             // 
             // label4
             // 
@@ -75,6 +61,16 @@
             this.loginButton.Name = "loginButton";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // inputLogin
+            // 
+            resources.ApplyResources(this.inputLogin, "inputLogin");
+            this.inputLogin.Name = "inputLogin";
+            // 
+            // inputPassword
+            // 
+            resources.ApplyResources(this.inputPassword, "inputPassword");
+            this.inputPassword.Name = "inputPassword";
             // 
             // gradientSidebar1
             // 
@@ -104,10 +100,10 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.inputPassword);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.inputLogin);
+            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gradientSidebar1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -125,11 +121,11 @@
         private Utils.GradientSidebar gradientSidebar1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox inputLogin;
-        private System.Windows.Forms.TextBox inputPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox inputLogin;
+        private System.Windows.Forms.TextBox inputPassword;
     }
 }
 

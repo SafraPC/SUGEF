@@ -98,7 +98,6 @@
     <Compile Include="Controller\NoAuth\LoginController.cs" />
     <Compile Include="Controller\Student\StudentController.cs" />
     <Compile Include="Helpers\AutomatizeScreen.cs" />
-    <Compile Include="Helpers\SetHover.cs" />
     <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
@@ -115,11 +114,17 @@
     <Compile Include="Components\GradientSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\Student\InitStudentView.cs">
+    <Compile Include="View\Student\ConfigUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\InitStudentView.Designer.cs">
-      <DependentUpon>InitStudentView.cs</DependentUpon>
+    <Compile Include="View\Student\ConfigUser.Designer.cs">
+      <DependentUpon>ConfigUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Student\StudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Student\StudentView.Designer.cs">
+      <DependentUpon>StudentView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\NoAuth\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -136,8 +141,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Student\InitStudentView.resx">
-      <DependentUpon>InitStudentView.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\ConfigUser.resx">
+      <DependentUpon>ConfigUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Student\StudentView.resx">
+      <DependentUpon>StudentView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

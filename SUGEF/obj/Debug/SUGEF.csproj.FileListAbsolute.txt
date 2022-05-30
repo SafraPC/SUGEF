@@ -86,5 +86,6 @@ C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Memory.xml
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.CopyComplete
-C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.InitStudentView.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.InitStudentView.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentView.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.ConfigUser.resources

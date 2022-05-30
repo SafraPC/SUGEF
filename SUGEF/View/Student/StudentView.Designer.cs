@@ -1,6 +1,6 @@
 ﻿namespace SUGEF.View.Student
 {
-    partial class InitStudentView
+    partial class StudentView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitStudentView));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentView));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -109,13 +109,10 @@
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
             this.pictureBox81 = new System.Windows.Forms.PictureBox();
             this.gradientSidebar1 = new SUGEF.Utils.GradientSidebar();
-            this.turmasPanel = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.turmaLabel = new System.Windows.Forms.Label();
+            this.itemSidebar1 = new SUGEF.Components.ItemSidebar();
             this.idLabel = new System.Windows.Forms.Label();
             this.firstName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.itemSidebar1 = new SUGEF.Components.ItemSidebar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -196,8 +193,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
             this.gradientSidebar1.SuspendLayout();
-            this.turmasPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -892,54 +887,28 @@
             this.gradientSidebar1.ColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(222)))));
             this.gradientSidebar1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
             this.gradientSidebar1.Controls.Add(this.itemSidebar1);
-            this.gradientSidebar1.Controls.Add(this.turmasPanel);
             this.gradientSidebar1.Controls.Add(this.idLabel);
             this.gradientSidebar1.Controls.Add(this.firstName);
             this.gradientSidebar1.Controls.Add(this.pictureBox1);
             this.gradientSidebar1.Location = new System.Drawing.Point(0, 0);
-            this.gradientSidebar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gradientSidebar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gradientSidebar1.Name = "gradientSidebar1";
             this.gradientSidebar1.Size = new System.Drawing.Size(290, 720);
             this.gradientSidebar1.TabIndex = 0;
             // 
-            // turmasPanel
+            // itemSidebar1
             // 
-            this.turmasPanel.BackColor = System.Drawing.Color.Transparent;
-            this.turmasPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.turmasPanel.Controls.Add(this.pictureBox2);
-            this.turmasPanel.Controls.Add(this.turmaLabel);
-            this.turmasPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.turmasPanel.ForeColor = System.Drawing.Color.Crimson;
-            this.turmasPanel.Location = new System.Drawing.Point(0, 161);
-            this.turmasPanel.Name = "turmasPanel";
-            this.turmasPanel.Size = new System.Drawing.Size(290, 44);
-            this.turmasPanel.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(33, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // turmaLabel
-            // 
-            this.turmaLabel.AutoSize = true;
-            this.turmaLabel.BackColor = System.Drawing.Color.Transparent;
-            this.turmaLabel.CausesValidation = false;
-            this.turmaLabel.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.turmaLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.turmaLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.turmaLabel.Location = new System.Drawing.Point(85, 11);
-            this.turmaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.turmaLabel.Name = "turmaLabel";
-            this.turmaLabel.Size = new System.Drawing.Size(70, 21);
-            this.turmaLabel.TabIndex = 5;
-            this.turmaLabel.Text = "Turmas";
+            this.itemSidebar1.BackColor = System.Drawing.Color.Transparent;
+            this.itemSidebar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.itemSidebar1.EVENT = this.ConfigClick;
+            this.itemSidebar1.ICONIMAGE = ((System.Drawing.Image)(resources.GetObject("itemSidebar1.ICONIMAGE")));
+            this.itemSidebar1.Location = new System.Drawing.Point(2, 488);
+            this.itemSidebar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.itemSidebar1.Name = "itemSidebar1";
+            this.itemSidebar1.SELECTED = false;
+            this.itemSidebar1.Size = new System.Drawing.Size(290, 44);
+            this.itemSidebar1.TabIndex = 0;
+            this.itemSidebar1.TITLE = "Configurações";
             // 
             // idLabel
             // 
@@ -948,10 +917,10 @@
             this.idLabel.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idLabel.ForeColor = System.Drawing.Color.White;
             this.idLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.idLabel.Location = new System.Drawing.Point(131, 75);
+            this.idLabel.Location = new System.Drawing.Point(98, 61);
             this.idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(25, 21);
+            this.idLabel.Size = new System.Drawing.Size(20, 17);
             this.idLabel.TabIndex = 3;
             this.idLabel.Text = "id";
             // 
@@ -962,10 +931,10 @@
             this.firstName.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstName.ForeColor = System.Drawing.Color.White;
             this.firstName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.firstName.Location = new System.Drawing.Point(131, 38);
+            this.firstName.Location = new System.Drawing.Point(98, 31);
             this.firstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstName.Name = "firstName";
-            this.firstName.Size = new System.Drawing.Size(124, 21);
+            this.firstName.Size = new System.Drawing.Size(101, 17);
             this.firstName.TabIndex = 2;
             this.firstName.Text = "PrimeiroNome";
             // 
@@ -974,36 +943,24 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 17);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // itemSidebar1
+            // StudentView
             // 
-            this.itemSidebar1.BackColor = System.Drawing.Color.Transparent;
-            this.itemSidebar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.itemSidebar1.ICONIMAGE = ((System.Drawing.Image)(resources.GetObject("itemSidebar1.ICONIMAGE")));
-            this.itemSidebar1.Location = new System.Drawing.Point(0, 557);
-            this.itemSidebar1.Name = "itemSidebar1";
-            this.itemSidebar1.SELECTED = false;
-            this.itemSidebar1.Size = new System.Drawing.Size(290, 44);
-            this.itemSidebar1.TabIndex = 4;
-            this.itemSidebar1.TITLE = "Configurações";
-            // 
-            // InitStudentView
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.ClientSize = new System.Drawing.Size(796, 547);
             this.Controls.Add(this.gradientSidebar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.Name = "InitStudentView";
+            this.Name = "StudentView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seja bem-vindo ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1087,9 +1044,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
             this.gradientSidebar1.ResumeLayout(false);
             this.gradientSidebar1.PerformLayout();
-            this.turmasPanel.ResumeLayout(false);
-            this.turmasPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1101,9 +1055,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Label firstName;
-        private System.Windows.Forms.Panel turmasPanel;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label turmaLabel;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;

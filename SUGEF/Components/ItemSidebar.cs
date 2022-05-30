@@ -9,9 +9,9 @@ namespace SUGEF.Components
     {
         public Image ICONIMAGE { get; set; }
         public string TITLE { get; set; }
-        
         public bool SELECTED { get; set; }
 
+        public EventHandler EVENT { get; set; }
         private void RemoveHover(object sender, EventArgs e)
         {
             this.BackColor = Color.Transparent;
@@ -24,9 +24,10 @@ namespace SUGEF.Components
 
         protected override void OnPaint(PaintEventArgs e)
         {
-           
+            this.TabIndex = 0;
             this.Size = new Size(290, 44);
             this.Cursor = Cursors.Hand;
+            this.Click += EVENT;
             if (this.SELECTED)
             {
                 this.BackColor = Color.FromArgb(30, 60, 114);
@@ -38,18 +39,19 @@ namespace SUGEF.Components
             }
             //Add icon
             PictureBox pictureBox = new PictureBox();
+            pictureBox.Enabled = false;
             pictureBox.Size = new Size(30, 30);
             pictureBox.Image = ICONIMAGE;
             pictureBox.MouseEnter += AddHover;
             pictureBox.MouseLeave += RemoveHover;
             pictureBox.Location = new Point(30, 12);
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox.TabIndex = 0;
             this.Controls.Add(pictureBox);
 
             //Add title
             Label title = new Label();
             title.Text = this.TITLE;
+            title.Click += EVENT;
             title.ForeColor = Color.White;
             title.MouseEnter += AddHover;
             title.MouseLeave += RemoveHover;

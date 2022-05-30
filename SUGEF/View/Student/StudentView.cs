@@ -12,16 +12,19 @@ using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
-    public partial class InitStudentView : Form
+    public partial class StudentView : Form
     {
-
-       StudentController student;
-        public InitStudentView(StudentController student)
+        StudentController student;
+        public StudentView(StudentController student)
         {
+            this.student = student;
             InitializeComponent();
             new AutomatizeScreen(this, student.GetStudentName());
-            new SetHover().setHover(this.turmasPanel);
-            this.student = student;
+        }
+
+        private void ConfigClick(object sender, EventArgs e)
+        {
+                new ShowForm(this, new ConfigUser(this.student));
         }
     }
 }

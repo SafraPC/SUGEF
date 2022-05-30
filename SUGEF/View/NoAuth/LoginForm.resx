@@ -130,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 200</value>
+    <value>383, 173</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -156,60 +156,6 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="inputLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Malgun Gothic, 12pt</value>
-  </data>
-  <data name="inputLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 237</value>
-  </data>
-  <data name="inputLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="inputLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>512, 34</value>
-  </data>
-  <data name="inputLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;inputLogin.Name" xml:space="preserve">
-    <value>inputLogin</value>
-  </data>
-  <data name="&gt;&gt;inputLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputLogin.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inputLogin.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="inputPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Malgun Gothic, 12pt</value>
-  </data>
-  <data name="inputPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 356</value>
-  </data>
-  <data name="inputPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="inputPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>512, 34</value>
-  </data>
-  <data name="inputPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;inputPassword.Name" xml:space="preserve">
-    <value>inputPassword</value>
-  </data>
-  <data name="&gt;&gt;inputPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputPassword.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inputPassword.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -220,7 +166,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 318</value>
+    <value>383, 280</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -244,7 +190,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="loginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -253,7 +199,7 @@
     <value>NoControl</value>
   </data>
   <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>579, 445</value>
+    <value>589, 444</value>
   </data>
   <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -277,6 +223,54 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;loginButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="inputLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="inputLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 222</value>
+  </data>
+  <data name="inputLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 30</value>
+  </data>
+  <data name="inputLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;inputLogin.Name" xml:space="preserve">
+    <value>inputLogin</value>
+  </data>
+  <data name="&gt;&gt;inputLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inputLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inputLogin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="inputPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="inputPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 333</value>
+  </data>
+  <data name="inputPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>568, 30</value>
+  </data>
+  <data name="inputPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;inputPassword.Name" xml:space="preserve">
+    <value>inputPassword</value>
+  </data>
+  <data name="&gt;&gt;inputPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inputPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inputPassword.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">

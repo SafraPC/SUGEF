@@ -13,7 +13,7 @@ namespace SUGEF
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ConnectDB connection = new ConnectDB();
-            if (connection.Connect())
+            if (!connection.Connect())
             {
                 Application.Run(new LoginForm());
             }

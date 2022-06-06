@@ -1,21 +1,14 @@
 ﻿using SUGEF.Controller.Student;
 using SUGEF.Helpers;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
-    public partial class StudentView : Form
+    public partial class Index : Form
     {
         StudentController student;
-        public StudentView(StudentController student)
+        public Index(StudentController student)
         {
             this.student = student;
             InitializeComponent();
@@ -24,7 +17,7 @@ namespace SUGEF.View.Student
 
         private void ConfigClick(object sender, EventArgs e)
         {
-                new ShowForm(this, new ConfigUser(this.student));
+                new ShowForm(this, new NotasBoletins(this.student));
         }
     }
 }

@@ -117,15 +117,14 @@
         }
 
         #endregion
-
-        private Utils.GradientSidebar gradientSidebar1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox inputLogin;
         private System.Windows.Forms.TextBox inputPassword;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Utils.GradientSidebar gradientSidebar1;
     }
 }
 

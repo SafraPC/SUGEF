@@ -18,9 +18,10 @@ namespace SUGEF.Utils
             LinearGradientBrush lgb = new LinearGradientBrush(this.ClientRectangle, this.ColorLeft, this.ColorRight, 90F);
             Graphics graph = e.Graphics;
             graph.FillRectangle(lgb,this.ClientRectangle);
-            base.OnPaint(e);
             this.Location = new Point(0, 0);
             this.Size = new Size(290, 720);
+            base.OnPaint(e);
+           
         }
 
     }

@@ -28,15 +28,7 @@ namespace SUGEF.Components
             this.Size = new Size(290, 44);
             this.Cursor = Cursors.Hand;
             this.Click += EVENT;
-            if (this.SELECTED)
-            {
-                this.BackColor = Color.FromArgb(30, 60, 114);
-            }
-            else
-            {
-                this.MouseEnter += AddHover;
-                this.MouseLeave += RemoveHover;
-            }
+         
             //Add icon
             PictureBox pictureBox = new PictureBox();
             pictureBox.Enabled = false;

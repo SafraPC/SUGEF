@@ -89,6 +89,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\StudentSidebar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\ItemSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -101,11 +104,11 @@
     <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
-    <Compile Include="View\NoAuth\LoginForm.cs">
+    <Compile Include="View\NoAuth\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\NoAuth\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="View\NoAuth\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\SetButtonHover.cs" />
     <Compile Include="Helpers\SetPlaceholder.cs" />
@@ -114,23 +117,35 @@
     <Compile Include="Components\GradientSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\Student\ConfigUser.cs">
+    <Compile Include="View\Student\Turmas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\ConfigUser.Designer.cs">
-      <DependentUpon>ConfigUser.cs</DependentUpon>
+    <Compile Include="View\Student\Turmas.Designer.cs">
+      <DependentUpon>Turmas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Student\StudentView.cs">
+    <Compile Include="View\Student\Config.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\StudentView.Designer.cs">
-      <DependentUpon>StudentView.cs</DependentUpon>
+    <Compile Include="View\Student\Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\NoAuth\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="View\Student\NotasBoletins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Student\NotasBoletins.Designer.cs">
+      <DependentUpon>NotasBoletins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Student\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Student\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\NoAuth\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\NoAuth\LoginForm.zu.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\NoAuth\Login.zu.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,11 +156,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Student\ConfigUser.resx">
-      <DependentUpon>ConfigUser.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\Turmas.resx">
+      <DependentUpon>Turmas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Student\StudentView.resx">
-      <DependentUpon>StudentView.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Student\NotasBoletins.resx">
+      <DependentUpon>NotasBoletins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Student\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

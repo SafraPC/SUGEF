@@ -9,10 +9,10 @@ namespace SUGEF.View.Student
         StudentController student;
         public Index(StudentController student)
         {
+            InitializeComponent();
             this.student = student;
             AutomatizeScreen formConfig = new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
             formConfig.RenderSidebarStudent(this, student);
-            InitializeComponent();
         }
     }
 }

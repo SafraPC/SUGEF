@@ -11,10 +11,10 @@ namespace SUGEF
         public LoginForm()
         {
             InitializeComponent();
+            new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
             new SetButtonHover(this.loginButton, Color.Green);
             new SetPlaceholder(this.inputLogin, "Insira seu Login");
             new SetPlaceholder(this.inputPassword, "Insira sua Senha");
-            new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
         }
 
         private void loginButton_Click(object sender, System.EventArgs e)

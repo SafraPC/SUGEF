@@ -108,6 +108,7 @@
             this.Controls.Add(this.gradientSidebar1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.ClientSize = new System.Drawing.Size(1080, 720);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.gradientSidebar1.ResumeLayout(false);

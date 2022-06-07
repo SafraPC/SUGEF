@@ -1,4 +1,5 @@
-﻿using SUGEF.Helpers;
+﻿using SUGEF.Controller.Student;
+using SUGEF.Helpers;
 using SUGEF.View.Student;
 using System;
 using System.Diagnostics;
@@ -14,9 +15,11 @@ namespace SUGEF.Utils
         private Color defaultSidebarColor = Color.FromArgb(30, 60, 114);
         private Color placeholderColor = Color.FromArgb(43, 81, 147);
 
-        Form student;
-        public StudentSidebar(Form student)
+        private Form form;
+        private StudentController student;
+        public StudentSidebar(Form form, StudentController student)
         {
+            this.form = form;
             this.student = student;
         }
 
@@ -31,7 +34,7 @@ namespace SUGEF.Utils
 
             void PutColor(object sender, EventArgs e) => panel.BackColor = placeholderColor;
             void RemoveColor(object sender, EventArgs e) => panel.BackColor = defaultSidebarColor;
-            void ChangeForm(object sender, EventArgs e) => new ShowForm(this.student, form);
+            void ChangeForm(object sender, EventArgs e) => new ShowForm(this.form, form);
             panel.Click += ChangeForm;
             panel.MouseEnter += PutColor;
             panel.MouseLeave += RemoveColor;
@@ -77,10 +80,10 @@ namespace SUGEF.Utils
 
             base.OnPaint(e);
 
-            this.Controls.Add(CreateSidebarElement("Turmas", "users", 150, new Turmas()));
-            this.Controls.Add(CreateSidebarElement("Notas e Boletins", "file", 200, new NotasBoletins()));
+            this.Controls.Add(CreateSidebarElement("Turmas", "users", 150, new Turmas(this.student)));
+            this.Controls.Add(CreateSidebarElement("Notas e Boletins", "file", 200, new NotasBoletins(this.student)));
 
-            this.Controls.Add(CreateSidebarElement("Configurações","settings",550,new Config()));
+            this.Controls.Add(CreateSidebarElement("Configurações","settings",550,new Config(this.student)));
             this.Controls.Add(CreateSidebarElement("Sair", "logout", 600, new LoginForm()));
         }
 

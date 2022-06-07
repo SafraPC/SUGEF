@@ -6,11 +6,13 @@ namespace SUGEF.View.Student
 {
     public partial class Config : Form
     {
-        public Config()
+        StudentController student;
+        public Config(StudentController student)
         {
-            InitializeComponent();
+            this.student = student;
             AutomatizeScreen formConfig = new AutomatizeScreen(this);
-            formConfig.RenderSidebarStudent(this);
+            formConfig.RenderSidebarStudent(this, student);
+            InitializeComponent();
         }
     }
 }

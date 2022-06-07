@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SUGEF.Controller.Student;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,9 +28,9 @@ namespace SUGEF.Helpers
             actualForm.Text += " " + title + "!";
         }
 
-        public void RenderSidebarStudent(Form context)
+        public void RenderSidebarStudent(Form context, StudentController student)
         {
-            Utils.StudentSidebar studentSidebar1 = new Utils.StudentSidebar(context);
+            Utils.StudentSidebar studentSidebar1 = new Utils.StudentSidebar(context,student);
             studentSidebar1.Name = "studentSidebar";
             context.Controls.Add(studentSidebar1);
         }

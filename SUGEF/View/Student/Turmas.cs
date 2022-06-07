@@ -6,10 +6,12 @@ namespace SUGEF.View.Student
 {
     public partial class Turmas : Form
     {
-        public Turmas()
+        StudentController student;
+        public Turmas(StudentController student)
         {
+            this.student = student; 
             AutomatizeScreen formConfig = new AutomatizeScreen(this);
-            formConfig.RenderSidebarStudent(this);
+            formConfig.RenderSidebarStudent(this, student);
             InitializeComponent();
         }
     }

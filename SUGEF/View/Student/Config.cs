@@ -6,7 +6,7 @@ namespace SUGEF.View.Student
 {
     public partial class Config : Form
     {
-        public Config(StudentController student)
+        public Config()
         {
             new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
             InitializeComponent();

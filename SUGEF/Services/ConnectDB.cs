@@ -16,6 +16,7 @@ namespace SUGEF.Services
                 return true;
             }catch(Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
@@ -33,6 +34,7 @@ namespace SUGEF.Services
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }

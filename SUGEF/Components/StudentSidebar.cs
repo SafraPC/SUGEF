@@ -1,6 +1,11 @@
-﻿using System;
+﻿using SUGEF.Controller.Student;
+using SUGEF.Helpers;
+using SUGEF.View.Student;
+using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Windows.Forms;
 
 namespace SUGEF.Utils
@@ -8,18 +13,28 @@ namespace SUGEF.Utils
     class StudentSidebar : Panel
     {
 
-        protected Panel CreateSidebarElement(string titleText)
+        private Color defaultSidebarColor = Color.FromArgb(30, 60, 114);
+        private Color placeholderColor = Color.FromArgb(43, 81, 147);
+
+        Form student;
+        public StudentSidebar(Form student)
+        {
+            this.student = student;
+        }
+
+        protected Panel CreateSidebarElement(string titleText, string icon, int location,Form form)
         {
          
-
             Panel panel = new Panel();
             panel.Size = new Size(290, 44);
             panel.Cursor = Cursors.Hand;
-            panel.BackColor = SystemColors.Highlight;
+            panel.BackColor = defaultSidebarColor;
+            panel.Location = new Point(0, location);
 
-            void PutColor(object sender, EventArgs e) => panel.BackColor = Color.FromArgb(30, 60, 114);
-            void RemoveColor(object sender, EventArgs e) => panel.BackColor = Color.Transparent;
-
+            void PutColor(object sender, EventArgs e) => panel.BackColor = placeholderColor;
+            void RemoveColor(object sender, EventArgs e) => panel.BackColor = defaultSidebarColor;
+            void ChangeForm(object sender, EventArgs e) => new ShowForm(this.student, form);
+            panel.Click += ChangeForm;
             panel.MouseEnter += PutColor;
             panel.MouseLeave += RemoveColor;
 
@@ -27,9 +42,17 @@ namespace SUGEF.Utils
             PictureBox pictureBox = new PictureBox();
             pictureBox.Size = new Size(30, 30);
             pictureBox.MouseEnter += PutColor;
+            pictureBox.Click += ChangeForm;
             pictureBox.MouseLeave += RemoveColor;
             pictureBox.Location = new Point(30, 12);
             pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            try
+            {
+                pictureBox.Load(@"" + Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + "\\Assets\\" + icon + ".png");
+            }catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
             panel.Controls.Add(pictureBox);
 
             //Add title
@@ -37,27 +60,26 @@ namespace SUGEF.Utils
             title.Text = titleText;
             title.ForeColor = Color.White;
             title.MouseEnter += PutColor;
+            title.Click += ChangeForm;
             title.MouseLeave += RemoveColor;
             title.Size = new Size(150, 34);
-            title.Font = new Font("Cambria", 11, FontStyle.Regular);
+            title.Font = new Font("Cambria", 14, FontStyle.Regular);
             title.Location = new Point(80, 12);
+
             panel.Controls.Add(title);
-
-            panel.Location = new Point(0, 10);
-
             return panel;
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            LinearGradientBrush lgb = new LinearGradientBrush(this.ClientRectangle, Color.FromArgb(70, 120, 222), Color.FromArgb(30, 60, 114), 90F);
-            Graphics graph = e.Graphics;
-            graph.FillRectangle(lgb, this.ClientRectangle);
+            this.BackColor = defaultSidebarColor;
             this.Location = new Point(0, 0);
             this.Size = new Size(290, 720);
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
             base.OnPaint(e);
 
-            this.Controls.Add(CreateSidebarElement("teste"));
+            this.Controls.Add(CreateSidebarElement("Configurações","settings",600,new Config()));
 
         }
 

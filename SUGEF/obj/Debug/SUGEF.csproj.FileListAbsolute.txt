@@ -91,3 +91,4 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\zu\SUGEF.resources.dll
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.CopyComplete
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.exe
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.pdb
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.AssemblyReference.cache

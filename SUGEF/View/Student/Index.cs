@@ -7,7 +7,7 @@ namespace SUGEF.View.Student
 {
     public partial class Index : Form
     {
-        StudentController student;
+        private StudentController student;
         public Index(StudentController student)
         {
             this.student = student;

@@ -1,10 +1,8 @@
-﻿using SUGEF.Controller.Student;
-using SUGEF.Helpers;
+﻿using SUGEF.Helpers;
 using SUGEF.View.Student;
 using System;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
 using System.Windows.Forms;
 
@@ -26,7 +24,7 @@ namespace SUGEF.Utils
         {
          
             Panel panel = new Panel();
-            panel.Size = new Size(290, 44);
+            panel.Size = new Size(290, 50);
             panel.Cursor = Cursors.Hand;
             panel.BackColor = defaultSidebarColor;
             panel.Location = new Point(0, location);
@@ -63,7 +61,7 @@ namespace SUGEF.Utils
             title.Click += ChangeForm;
             title.MouseLeave += RemoveColor;
             title.Size = new Size(150, 34);
-            title.Font = new Font("Cambria", 14, FontStyle.Regular);
+            title.Font = new Font("Cambria", 11, FontStyle.Regular);
             title.Location = new Point(80, 12);
 
             panel.Controls.Add(title);
@@ -79,8 +77,11 @@ namespace SUGEF.Utils
 
             base.OnPaint(e);
 
-            this.Controls.Add(CreateSidebarElement("Configurações","settings",600,new Config()));
+            this.Controls.Add(CreateSidebarElement("Turmas", "users", 150, new Turmas()));
+            this.Controls.Add(CreateSidebarElement("Notas e Boletins", "file", 200, new NotasBoletins()));
 
+            this.Controls.Add(CreateSidebarElement("Configurações","settings",550,new Config()));
+            this.Controls.Add(CreateSidebarElement("Sair", "logout", 600, new LoginForm()));
         }
 
     }

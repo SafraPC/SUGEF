@@ -1,23 +1,18 @@
 ﻿using SUGEF.Controller.Student;
 using SUGEF.Helpers;
-using System;
 using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
     public partial class Index : Form
     {
-        private StudentController student;
         public Index(StudentController student)
         {
-            this.student = student;
+           
             InitializeComponent();
-            new AutomatizeScreen(this, student.GetStudentName());
+            AutomatizeScreen formConfig = new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            formConfig.RenderSidebarStudent(this);
         }
 
-        private void ConfigClick(object sender, EventArgs e)
-        {
-                new ShowForm(this, new NotasBoletins(this.student));
-        }
     }
 }

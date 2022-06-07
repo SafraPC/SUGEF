@@ -6,9 +6,10 @@ namespace SUGEF.View.Student
 {
     public partial class NotasBoletins : Form
     {
-        public NotasBoletins(StudentController student)
+        public NotasBoletins()
         {
-            new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
+            formConfig.RenderSidebarStudent(this);
             InitializeComponent();
         }
 

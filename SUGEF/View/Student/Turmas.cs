@@ -6,9 +6,10 @@ namespace SUGEF.View.Student
 {
     public partial class Turmas : Form
     {
-        public Turmas(StudentController student)
+        public Turmas()
         {
-            new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
+            formConfig.RenderSidebarStudent(this);
             InitializeComponent();
         }
     }

@@ -27,5 +27,12 @@ namespace SUGEF.Helpers
             actualForm.Text += " " + title + "!";
         }
 
+        public void RenderSidebarStudent(Form context)
+        {
+            Utils.StudentSidebar studentSidebar1 = new Utils.StudentSidebar(context);
+            studentSidebar1.Name = "studentSidebar";
+            context.Controls.Add(studentSidebar1);
+        }
+
     }
 }

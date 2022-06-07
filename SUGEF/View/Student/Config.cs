@@ -8,8 +8,9 @@ namespace SUGEF.View.Student
     {
         public Config()
         {
-            new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
             InitializeComponent();
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
+            formConfig.RenderSidebarStudent(this);
         }
     }
 }

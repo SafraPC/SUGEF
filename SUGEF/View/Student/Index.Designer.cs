@@ -28,6 +28,5 @@
             this.ResumeLayout(false);
 
         }
-    
     }
 }

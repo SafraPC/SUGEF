@@ -71,15 +71,55 @@ namespace SUGEF.Utils
             return panel;
         }
 
+
+        private void RenderHeader()
+        {
+            //Add user Image
+            PictureBox userImg = new PictureBox();
+            userImg.Location = new Point(10, 10);
+            try
+            {
+            userImg.Load(@"" + Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + "\\Assets\\" + "userImage.png");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            userImg.Size = new Size(110, 100);
+            userImg.SizeMode = PictureBoxSizeMode.Zoom;
+            this.Controls.Add(userImg);
+
+            //Add User Name
+            Label username = new Label();
+            username.Location = new Point(130, 40);
+            username.Size = new Size(150, 20);
+            username.Text = this.student.GetStudentName();
+            username.Font = new Font("Cambria", 11, FontStyle.Regular);
+            username.ForeColor = Color.White;
+            this.Controls.Add(username);
+
+            //Add User Id
+            Label usernameId = new Label();
+            usernameId.Location = new Point(130, 65);
+            usernameId.Size = new Size(150, 20);
+            usernameId.Text = this.student.GetStudentID().ToString();
+            usernameId.Font = new Font("Cambria", 11, FontStyle.Regular);
+            usernameId.ForeColor = Color.White;
+            this.Controls.Add(usernameId);
+        }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             this.BackColor = defaultSidebarColor;
             this.Location = new Point(0, 0);
             this.Size = new Size(290, 720);
-            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-
             base.OnPaint(e);
 
+            //Create picture and data
+
+            RenderHeader();
+
+            //Create Panels
             this.Controls.Add(CreateSidebarElement("Turmas", "users", 150, new Turmas(this.student)));
             this.Controls.Add(CreateSidebarElement("Notas e Boletins", "file", 200, new NotasBoletins(this.student)));
 

@@ -19,7 +19,7 @@ namespace SUGEF
 
         private void loginButton_Click(object sender, System.EventArgs e)
         {
-            StudentController student = new StudentController(0,"Safra","leandrosafra.jconectada@gmail.com","20");
+            StudentController student = new StudentController(123123123,"Macelin","Marclin.jconectada@gmail.com","30");
             new ShowForm(this,new Index(student));
         }
     }

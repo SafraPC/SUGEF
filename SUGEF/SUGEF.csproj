@@ -89,6 +89,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\ProfessorSidebar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\SidebarProps.cs" />
     <Compile Include="Components\StudentSidebar.cs">
       <SubType>Component</SubType>
     </Compile>

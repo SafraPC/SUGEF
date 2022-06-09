@@ -1,11 +1,9 @@
-﻿using SUGEF.Helpers;
-
-namespace SUGEF.View.Student
+﻿namespace SUGEF.View.Student
 {
-    partial class Config
+    partial class StudentIndex
     {
+     
         private System.ComponentModel.IContainer components = null;
-
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -19,14 +17,15 @@ namespace SUGEF.View.Student
         {
             this.SuspendLayout();
             // 
-            // Config
+            // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1080, 720);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Config";
-            this.Text = "Configuração de Usuário";
+            this.MaximizeBox = false;
+            this.Name = "Index";
+            this.Text = "Seja bem-vindo ";
             this.ResumeLayout(false);
 
         }

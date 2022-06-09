@@ -27,10 +27,9 @@ namespace SUGEF.Utils
 
             sidebarElements.CreateHeader(this.professor.GetStudentName(),this.professor.GetStudentID().ToString());
             //Create Panels
-            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new Turmas(this.professor));
-            sidebarElements.CreateSidebarElement("Notas e Boletins", "file", 200, new NotasBoletins(this.professor));
+            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentTurmas(this.professor));
 
-            sidebarElements.CreateSidebarElement("Configurações","settings",600,new Config(this.professor));
+            sidebarElements.CreateSidebarElement("Configurações","settings",600,new StudentConfig(this.professor));
             sidebarElements.CreateSidebarElement("Sair", "logout", 650, new LoginForm());
         }
 

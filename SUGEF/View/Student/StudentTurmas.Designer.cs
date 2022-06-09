@@ -1,6 +1,6 @@
 ﻿namespace SUGEF.View.Student
 {
-    partial class Turmas
+    partial class StudentTurmas
     {
         private System.ComponentModel.IContainer components = null;
 

@@ -89,6 +89,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\DirectorSidebar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\ProfessorSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -121,29 +124,29 @@
     <Compile Include="Components\GradientSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\Student\Turmas.cs">
+    <Compile Include="View\Student\StudentTurmas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\Turmas.Designer.cs">
-      <DependentUpon>Turmas.cs</DependentUpon>
+    <Compile Include="View\Student\StudentTurmas.Designer.cs">
+      <DependentUpon>StudentTurmas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Student\Config.cs">
+    <Compile Include="View\Student\StudentConfig.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\Config.Designer.cs">
-      <DependentUpon>Config.cs</DependentUpon>
+    <Compile Include="View\Student\StudentConfig.Designer.cs">
+      <DependentUpon>StudentConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Student\NotasBoletins.cs">
+    <Compile Include="View\Student\StudentNotas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\NotasBoletins.Designer.cs">
-      <DependentUpon>NotasBoletins.cs</DependentUpon>
+    <Compile Include="View\Student\StudentNotas.Designer.cs">
+      <DependentUpon>StudentNotas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Student\Index.cs">
+    <Compile Include="View\Student\StudentIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\Index.Designer.cs">
-      <DependentUpon>Index.cs</DependentUpon>
+    <Compile Include="View\Student\StudentIndex.Designer.cs">
+      <DependentUpon>StudentIndex.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\NoAuth\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -160,17 +163,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Student\Turmas.resx">
-      <DependentUpon>Turmas.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\StudentTurmas.resx">
+      <DependentUpon>StudentTurmas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Student\Config.resx">
-      <DependentUpon>Config.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\StudentConfig.resx">
+      <DependentUpon>StudentConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Student\NotasBoletins.resx">
-      <DependentUpon>NotasBoletins.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\StudentNotas.resx">
+      <DependentUpon>StudentNotas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Student\Index.resx">
-      <DependentUpon>Index.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\StudentIndex.resx">
+      <DependentUpon>StudentIndex.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

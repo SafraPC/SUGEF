@@ -27,10 +27,10 @@ namespace SUGEF.Utils
             SidebarProps sidebarElements = new SidebarProps(this,this.form);
             sidebarElements.CreateHeader(student.GetStudentName(),student.GetStudentID().ToString());
             //Create Panels
-            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new Turmas(this.student));
-            sidebarElements.CreateSidebarElement("Notas e Boletins", "file", 200, new NotasBoletins(this.student));
+            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentTurmas(this.student));
+            sidebarElements.CreateSidebarElement("Notas e Boletins", "file", 200, new StudentNotas(this.student));
 
-            sidebarElements.CreateSidebarElement("Configurações","settings",600,new Config(this.student));
+            sidebarElements.CreateSidebarElement("Configurações","settings",600,new StudentConfig(this.student));
             sidebarElements.CreateSidebarElement("Sair", "logout", 650, new LoginForm());
         }
 

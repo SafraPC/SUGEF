@@ -80,10 +80,6 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\bin\Debug\System.Runtime.CompilerSer
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.SuggestedBindingRedirects.cache
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.LoginForm.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.Properties.Resources.resources
-C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.Turmas.resources
-C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.Config.resources
-C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.NotasBoletins.resources
-C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.Index.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.LoginForm.zu.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.GenerateResource.cache
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.CoreCompileInputs.cache
@@ -92,3 +88,7 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.CopyComplete
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.exe
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.pdb
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.AssemblyReference.cache
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentTurmas.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentConfig.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentNotas.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentIndex.resources

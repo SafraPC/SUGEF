@@ -1,6 +1,8 @@
-﻿namespace SUGEF.View.Student
+﻿using SUGEF.Helpers;
+
+namespace SUGEF.View.Student
 {
-    partial class NotasBoletins
+    partial class StudentConfig
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -15,15 +17,18 @@
 
         private void InitializeComponent()
         {
+            this.SuspendLayout();
+            // 
+            // Config
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1080, 720);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "NotasBoletins";
-            this.Text = "Turmas e Boletins";
+            this.Name = "Config";
+            this.Text = "Configuração de Usuário";
             this.ResumeLayout(false);
+
         }
-
-
     }
 }

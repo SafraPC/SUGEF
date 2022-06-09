@@ -4,14 +4,14 @@ using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
-    public partial class Index : Form
+    public partial class StudentNotas : Form
     {
         StudentController student;
-        public Index(StudentController student)
+        public StudentNotas(StudentController student)
         {
             InitializeComponent();
             this.student = student;
-            AutomatizeScreen formConfig = new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
             formConfig.RenderSidebarStudent(this, student);
         }
     }

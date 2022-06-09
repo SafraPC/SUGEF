@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
-    public partial class NotasBoletins : Form
+    public partial class StudentConfig : Form
     {
         StudentController student;
-        public NotasBoletins(StudentController student)
+        public StudentConfig(StudentController student)
         {
             InitializeComponent();
             this.student = student;

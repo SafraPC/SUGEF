@@ -106,6 +106,12 @@
     <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
+    <Compile Include="View\Director\DirectorEnrollStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Director\DirectorEnrollStudent.Designer.cs">
+      <DependentUpon>DirectorEnrollStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Director\DirectorCreateTurma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <Compile Include="View\Student\StudentIndex.Designer.cs">
       <DependentUpon>StudentIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Director\DirectorEnrollStudent.resx">
+      <DependentUpon>DirectorEnrollStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Director\DirectorCreateTurma.resx">
       <DependentUpon>DirectorCreateTurma.cs</DependentUpon>
     </EmbeddedResource>

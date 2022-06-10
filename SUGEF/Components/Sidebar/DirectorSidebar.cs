@@ -1,7 +1,6 @@
 ﻿using SUGEF.Components;
 using SUGEF.Controller.Student;
 using SUGEF.View.Director;
-using SUGEF.View.Student;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -30,7 +29,8 @@ namespace SUGEF.Utils
             //Create Panels
             sidebarElements.CreateSidebarElement("Criar Turma", "file", 150, new DirectorCreateTurma(this.director));
             sidebarElements.CreateSidebarElement("Criar Usuário", "file", 200, new DirectorCreateUser(this.director));
-            sidebarElements.CreateSidebarElement("Pesquisar", "file", 250, new DirectorIndex(this.director));
+            sidebarElements.CreateSidebarElement("Matricular Aluno", "file", 250, new DirectorEnrollStudent(this.director));
+            sidebarElements.CreateSidebarElement("Pesquisar", "file", 300, new DirectorIndex(this.director));
 
             sidebarElements.CreateSidebarElement("Configurações","settings",600,new DirectorIndex(this.director));
             sidebarElements.CreateSidebarElement("Sair", "logout", 650, new LoginForm());

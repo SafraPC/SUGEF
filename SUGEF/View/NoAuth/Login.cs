@@ -1,12 +1,10 @@
-﻿using MySql.Data.MySqlClient;
-using SUGEF.Controller.Student;
+﻿using SUGEF.Controller.Student;
 using SUGEF.Helpers;
 using SUGEF.Services;
 using SUGEF.View.Director;
 using SUGEF.View.Professor;
 using SUGEF.View.Student;
 using System;
-using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 

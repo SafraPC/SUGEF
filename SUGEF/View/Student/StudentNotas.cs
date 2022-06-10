@@ -14,5 +14,10 @@ namespace SUGEF.View.Student
             AutomatizeScreen formConfig = new AutomatizeScreen(this);
             formConfig.RenderSidebarStudent(this, student);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -12,8 +12,8 @@ namespace SUGEF
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ConnectDB connection = new ConnectDB();
-            if (connection.Connect())
+          
+            if (new ConnectDB().Connect())
             {
                 Application.Run(new LoginForm());
             }
@@ -24,8 +24,6 @@ namespace SUGEF
              MessageBoxButtons.OK,
              MessageBoxIcon.Error);
             }
-         
-
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

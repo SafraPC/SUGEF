@@ -29,19 +29,19 @@ namespace SUGEF.Helpers
             actualForm.Text += " " + title + "!";
         }
 
-        public void RenderSidebarStudent(Form context, StudentController student)
+        public void RenderSidebarStudent(Form context, UserController student)
         {
             Utils.StudentSidebar studentSidebar = new Utils.StudentSidebar(context,student);
             studentSidebar.Name = "studentSidebar";
             context.Controls.Add(studentSidebar);
         }
-        public void RenderSidebarProfessor(Form context, StudentController professor)
+        public void RenderSidebarProfessor(Form context, UserController professor)
         {
             Utils.ProfessorSidebar professorSidebar = new Utils.ProfessorSidebar(context, professor);
             professorSidebar.Name = "professorSidebar";
             context.Controls.Add(professorSidebar);
         }
-        public void RenderSidebarDirector(Form context, StudentController director)
+        public void RenderSidebarDirector(Form context, UserController director)
         {
             Utils.DirectorSidebar directorSidebar = new Utils.DirectorSidebar(context, director);
             directorSidebar.Name = "directorSidebar";

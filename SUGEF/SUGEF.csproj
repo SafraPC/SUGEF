@@ -106,11 +106,17 @@
       <DependentUpon>ItemSidebar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\NoAuth\LoginController.cs" />
-    <Compile Include="Controller\Student\StudentController.cs" />
+    <Compile Include="Controller\User\UserController.cs" />
     <Compile Include="Helpers\AutomatizeScreen.cs" />
     <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
+    <Compile Include="View\Director\DirectorIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Director\DirectorIndex.Designer.cs">
+      <DependentUpon>DirectorIndex.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\NoAuth\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Components\GradientSidebar.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Professor\ProfessorIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Professor\ProfessorIndex.Designer.cs">
+      <DependentUpon>ProfessorIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Student\StudentTurmas.cs">
       <SubType>Form</SubType>
@@ -148,6 +160,9 @@
     <Compile Include="View\Student\StudentIndex.Designer.cs">
       <DependentUpon>StudentIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Director\DirectorIndex.resx">
+      <DependentUpon>DirectorIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\NoAuth\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +178,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Professor\ProfessorIndex.resx">
+      <DependentUpon>ProfessorIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Student\StudentTurmas.resx">
       <DependentUpon>StudentTurmas.cs</DependentUpon>
     </EmbeddedResource>

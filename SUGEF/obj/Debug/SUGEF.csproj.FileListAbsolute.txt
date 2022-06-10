@@ -92,3 +92,5 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.Student
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentConfig.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentNotas.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentIndex.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorIndex.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorIndex.resources

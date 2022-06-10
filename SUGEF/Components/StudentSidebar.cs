@@ -9,8 +9,8 @@ namespace SUGEF.Utils
     class StudentSidebar : Panel
     {
         private Form form;
-        private StudentController student;
-        public StudentSidebar(Form form, StudentController student)
+        private UserController student;
+        public StudentSidebar(Form form, UserController student)
         {
             this.form = form;
             this.student = student;
@@ -25,7 +25,7 @@ namespace SUGEF.Utils
             //Create picture and data
 
             SidebarProps sidebarElements = new SidebarProps(this,this.form);
-            sidebarElements.CreateHeader(student.GetStudentName(),student.GetStudentID().ToString());
+            sidebarElements.CreateHeader(student.UserName,student.UserCpf);
             //Create Panels
             sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentTurmas(this.student));
             sidebarElements.CreateSidebarElement("Notas e Boletins", "file", 200, new StudentNotas(this.student));

@@ -6,8 +6,8 @@ namespace SUGEF.View.Student
 {
     public partial class StudentTurmas : Form
     {
-        StudentController student;
-        public StudentTurmas(StudentController student)
+        UserController student;
+        public StudentTurmas(UserController student)
         {
             InitializeComponent();
             this.student = student;

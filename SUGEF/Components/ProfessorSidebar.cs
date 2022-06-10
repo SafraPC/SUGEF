@@ -1,5 +1,6 @@
 ﻿using SUGEF.Components;
 using SUGEF.Controller.Student;
+using SUGEF.View.Professor;
 using SUGEF.View.Student;
 using System.Drawing;
 using System.Windows.Forms;
@@ -9,8 +10,8 @@ namespace SUGEF.Utils
     class ProfessorSidebar : Panel
     {
         private Form form;
-        private StudentController professor;
-        public ProfessorSidebar(Form form, StudentController professor)
+        private UserController professor;
+        public ProfessorSidebar(Form form, UserController professor)
         {
             this.form = form;
             this.professor = professor;
@@ -25,11 +26,11 @@ namespace SUGEF.Utils
             //Create picture and data
             SidebarProps sidebarElements = new SidebarProps(this, this.form);
 
-            sidebarElements.CreateHeader(this.professor.GetStudentName(),this.professor.GetStudentID().ToString());
+            sidebarElements.CreateHeader(this.professor.UserName,this.professor.UserCpf);
             //Create Panels
-            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentTurmas(this.professor));
+            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new ProfessorIndex(this.professor));
 
-            sidebarElements.CreateSidebarElement("Configurações","settings",600,new StudentConfig(this.professor));
+            sidebarElements.CreateSidebarElement("Configurações","settings",600,new ProfessorIndex(this.professor));
             sidebarElements.CreateSidebarElement("Sair", "logout", 650, new LoginForm());
         }
 

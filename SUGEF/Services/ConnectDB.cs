@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
+using SUGEF.Controller.Student;
 
 namespace SUGEF.Services
 {
@@ -19,28 +20,46 @@ namespace SUGEF.Services
                 Debug.WriteLine(ex.Message);
                 return false;
             }
-        }
-        public bool InsertAction(string sqlQuery)
-        {
-            //TODO: FINISH IT.
-            try{
-                MySqlCommand command = new MySqlCommand(sqlQuery,connect);
-                MySqlDataReader obj =  command.ExecuteReader();
-                while (obj.Read())
-                {
-                    Debug.WriteLine(obj.GetString(0).ToString());
-                }
-                return true; 
+            finally
+            {
+                this.connect.Close();
             }
+        }
+
+        public UserController Login(string login, string senha)
+        {
+            try
+            {
+                if (this.connect == null)
+                {
+                    Connect();
+                }
+                this.connect.Open();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Users WHERE userLogin = '"+login+"' AND userSenha = '"+senha+"'", connect);
+                MySqlDataReader reader = command.ExecuteReader();
+                UserController user = new UserController();
+                while (reader.Read())
+                {
+                    user.UserId = int.Parse(reader.GetString("userId")); 
+                    user.UserName = reader.GetString("userName");
+                    user.UserTipo = reader.GetString("userTipo");
+                    user.UserLogin = reader.GetString("userLogin");
+                    user.UserNascimento = reader.GetString("userNascimento");
+                    user.UserCpf = reader.GetString("userCpf");
+                    user.UserFoto = reader.GetString("userFoto");
+                }
+                return user;
+            }
+
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                return false;
+                return null;
             }
-        }
-        public void Disconnect()
-        {
-            this.connect.Close();
+            finally
+            {
+                this.connect.Close();
+            }
         }
     }
 }

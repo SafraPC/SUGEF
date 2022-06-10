@@ -106,6 +106,18 @@
     <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
+    <Compile Include="View\Director\DirectorCreateTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Director\DirectorCreateTurma.Designer.cs">
+      <DependentUpon>DirectorCreateTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Director\DirectorCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Director\DirectorCreateUser.Designer.cs">
+      <DependentUpon>DirectorCreateUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Director\DirectorIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +143,12 @@
     <Compile Include="View\Professor\ProfessorIndex.Designer.cs">
       <DependentUpon>ProfessorIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Professor\ProfessorTurmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Professor\ProfessorTurmas.Designer.cs">
+      <DependentUpon>ProfessorTurmas.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Student\StudentTurmas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +173,12 @@
     <Compile Include="View\Student\StudentIndex.Designer.cs">
       <DependentUpon>StudentIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Director\DirectorCreateTurma.resx">
+      <DependentUpon>DirectorCreateTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Director\DirectorCreateUser.resx">
+      <DependentUpon>DirectorCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Director\DirectorIndex.resx">
       <DependentUpon>DirectorIndex.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +199,9 @@
     </Compile>
     <EmbeddedResource Include="View\Professor\ProfessorIndex.resx">
       <DependentUpon>ProfessorIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Professor\ProfessorTurmas.resx">
+      <DependentUpon>ProfessorTurmas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Student\StudentTurmas.resx">
       <DependentUpon>StudentTurmas.cs</DependentUpon>

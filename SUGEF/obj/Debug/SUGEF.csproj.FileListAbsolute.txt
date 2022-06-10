@@ -94,3 +94,6 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.Student
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentIndex.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorIndex.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorIndex.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateUser.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateTurma.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.ProfessorTurmas.resources

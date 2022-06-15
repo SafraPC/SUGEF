@@ -1,13 +1,8 @@
 ﻿using SUGEF.Controller.Student;
 using SUGEF.Helpers;
+using SUGEF.Model.Director;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace SUGEF.View.Director
@@ -15,6 +10,7 @@ namespace SUGEF.View.Director
     public partial class DirectorCreateUser : Form
     {
         UserController director = null;
+        DirectorModel directorModel = new DirectorModel();
         public DirectorCreateUser(UserController director)
         {
             InitializeComponent();
@@ -23,14 +19,31 @@ namespace SUGEF.View.Director
             formConfig.RenderSidebarDirector(this, director);
         }
 
-        private void inputLogin_TextChanged(object sender, EventArgs e)
+        //handle submit
+        private void buttonCadastrar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            try
+            {
+                if (directorModel.CreateUser(this.inputNome.Text, this.inputUserTipo.Text, this.inputLogin.Text,
+                   this.inputPassword.Text, this.inputDate.Text, this.inputCpf.Text))
+                {
+                    MessageBox.Show($"{this.inputUserTipo.Text} cadastrado com sucesso!","Sucesso!");
+                    this.inputNome.Text = "";
+                    this.inputLogin.Text = "";
+                    this.inputPassword.Text = "";
+                    this.inputDate.Text = "";
+                    this.inputCpf.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro ao cadastrar o usuário, verifique os dados e tente novamente!", "Ocorreu um erro durante a execução!", MessageBoxButtons.OK,MessageBoxIcon.Error) ;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                MessageBox.Show("Algo deu errado!","Ocorreu um erro durante a execução.",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using SUGEF.Controller.Student;
 
@@ -26,6 +27,15 @@ namespace SUGEF.Services
             }
         }
 
+        public MySqlConnection Connection()
+        {
+            if (this.connect == null)
+            {
+                Connect();
+            }
+            return this.connect;
+        }
+
         public UserController Login(string login, string senha)
         {
             try
@@ -34,8 +44,9 @@ namespace SUGEF.Services
                 {
                     Connect();
                 }
+
                 this.connect.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM Users WHERE userLogin = '"+login+"' AND userSenha = '"+senha+"'", connect);
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Users WHERE userLogin = '"+login+"' AND userSenha = '"+senha+"'", this.connect);
                 MySqlDataReader reader = command.ExecuteReader();
                 UserController user = new UserController();
                 while (reader.Read())

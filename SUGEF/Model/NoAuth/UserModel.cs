@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,5 +21,6 @@ namespace SUGEF.Controller.Student
         public string UserCpf { get => userCpf; set => userCpf = value; }
         public string UserFoto { get => userFoto; set => userFoto = value; }
         public int UserId { get => userId; set => userId = value; }
+
     }
 }

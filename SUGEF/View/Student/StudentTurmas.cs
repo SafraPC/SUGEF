@@ -14,13 +14,7 @@ namespace SUGEF.View.Student
             this.student = student;
             AutomatizeScreen formConfig = new AutomatizeScreen(this);
             formConfig.RenderSidebarStudent(this, student);
-
-
             this.flowPanel.Controls.Add(new StudentCard().CreateTurmasPanel());
-            this.flowPanel.Controls.Add(new StudentCard().CreateTurmasPanel());
-            this.flowPanel.Controls.Add(new StudentCard().CreateTurmasPanel());
-            this.flowPanel.Controls.Add(new StudentCard().CreateTurmasPanel());
-
         }
     }
 }

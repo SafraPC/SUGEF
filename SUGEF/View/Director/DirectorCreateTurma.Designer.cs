@@ -57,7 +57,7 @@
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.ForeColor = System.Drawing.Color.Green;
             this.loginButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.loginButton.Location = new System.Drawing.Point(648, 474);
+            this.loginButton.Location = new System.Drawing.Point(636, 474);
             this.loginButton.Margin = new System.Windows.Forms.Padding(2);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(123, 47);

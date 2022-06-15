@@ -5,6 +5,7 @@ using SUGEF.View.Director;
 using SUGEF.View.Professor;
 using SUGEF.View.Student;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -28,26 +29,30 @@ namespace SUGEF
             try
             {
                 UserController user = this.dataQuerys.Login(this.inputLogin.Text, this.inputPassword.Text);
-                if (user.UserTipo == "Aluno")
+                if (user != null)
                 {
-                    new ShowForm(this, new StudentIndex(user));
-                    return;
+                    if (user.UserTipo == "Aluno")
+                    {
+                        new ShowForm(this, new StudentIndex(user));
+                        return;
+                    }
+                    if (user.UserTipo == "Professor")
+                    {
+                        new ShowForm(this, new ProfessorIndex(user));
+                        return;
+                    }
+                    if (user.UserTipo == "Diretor")
+                    {
+                        new ShowForm(this, new DirectorIndex(user));
+                        return;
+                    }
                 }
-                if (user.UserTipo == "Professor")
-                {
-                    new ShowForm(this, new ProfessorIndex(user));
-                    return;
-                }
-                if (user.UserTipo == "Diretor")
-                {
-                    new ShowForm(this, new DirectorIndex(user));
-                    return;
-                }
-                MessageBox.Show("Credenciais Incorretas!", "Houve um erro ao fazer Login!!!", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Credenciais Incorretas!", "Houve um erro ao fazer Login!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception _ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Houve um erro ao fazer Login!!!", "Houve um erro ao fazer Login!!!", MessageBoxButtons.OK);
+                Debug.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message, "Houve um erro ao fazer Login!!!", MessageBoxButtons.OK);
             }
         }
     }

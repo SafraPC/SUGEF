@@ -100,11 +100,10 @@
     <Compile Include="Components\Sidebar\StudentSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controller\NoAuth\LoginController.cs" />
-    <Compile Include="Controller\User\UserController.cs" />
+    <Compile Include="Model\Director\DirectorModel.cs" />
+    <Compile Include="Model\NoAuth\UserModel.cs" />
     <Compile Include="Helpers\AutomatizeScreen.cs" />
     <Compile Include="Helpers\ShowForm.cs" />
-    <Compile Include="Model\NoAuth\LoginModel.cs" />
     <Compile Include="Services\ConnectDB.cs" />
     <Compile Include="View\Director\DirectorEnrollStudent.cs">
       <SubType>Form</SubType>
@@ -245,5 +244,6 @@
     <Content Include="Assets\userImage.png" />
     <Content Include="Assets\users.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

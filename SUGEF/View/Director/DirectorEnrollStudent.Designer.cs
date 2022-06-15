@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.loginButton = new System.Windows.Forms.Button();
+            this.matricularButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.inputAlunoFalta = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.selectAluno = new System.Windows.Forms.ComboBox();
             this.selectTurma = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,20 +48,21 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Matricular Aluno";
             // 
-            // loginButton
+            // matricularButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.ForeColor = System.Drawing.Color.Green;
-            this.loginButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.loginButton.Location = new System.Drawing.Point(636, 383);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(123, 47);
-            this.loginButton.TabIndex = 8;
-            this.loginButton.Text = "Matricular";
-            this.loginButton.UseVisualStyleBackColor = false;
+            this.matricularButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.matricularButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.matricularButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.matricularButton.ForeColor = System.Drawing.Color.Green;
+            this.matricularButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.matricularButton.Location = new System.Drawing.Point(628, 382);
+            this.matricularButton.Margin = new System.Windows.Forms.Padding(2);
+            this.matricularButton.Name = "matricularButton";
+            this.matricularButton.Size = new System.Drawing.Size(123, 47);
+            this.matricularButton.TabIndex = 8;
+            this.matricularButton.Text = "Matricular";
+            this.matricularButton.UseVisualStyleBackColor = false;
+            this.matricularButton.Click += new System.EventHandler(this.matricularButton_Click);
             // 
             // label2
             // 
@@ -76,14 +77,14 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Selecione o aluno";
             // 
-            // textBox4
+            // inputAlunoFalta
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox4.Location = new System.Drawing.Point(458, 299);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(474, 26);
-            this.textBox4.TabIndex = 17;
+            this.inputAlunoFalta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.inputAlunoFalta.Location = new System.Drawing.Point(458, 299);
+            this.inputAlunoFalta.Margin = new System.Windows.Forms.Padding(2);
+            this.inputAlunoFalta.Name = "inputAlunoFalta";
+            this.inputAlunoFalta.Size = new System.Drawing.Size(474, 26);
+            this.inputAlunoFalta.TabIndex = 17;
             // 
             // label6
             // 
@@ -98,33 +99,25 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Insira o total de faltas da matricula";
             // 
+            // selectAluno
+            // 
+            this.selectAluno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.selectAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectAluno.FormattingEnabled = true;
+            this.selectAluno.Location = new System.Drawing.Point(458, 127);
+            this.selectAluno.Name = "selectAluno";
+            this.selectAluno.Size = new System.Drawing.Size(474, 28);
+            this.selectAluno.TabIndex = 18;
+            // 
             // selectTurma
             // 
             this.selectTurma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectTurma.FormattingEnabled = true;
-            this.selectTurma.Items.AddRange(new object[] {
-            "Aluno",
-            "Professor",
-            "Diretor"});
-            this.selectTurma.Location = new System.Drawing.Point(458, 127);
+            this.selectTurma.Location = new System.Drawing.Point(458, 211);
             this.selectTurma.Name = "selectTurma";
             this.selectTurma.Size = new System.Drawing.Size(474, 28);
-            this.selectTurma.TabIndex = 18;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Aluno",
-            "Professor",
-            "Diretor"});
-            this.comboBox1.Location = new System.Drawing.Point(458, 211);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(474, 28);
-            this.comboBox1.TabIndex = 22;
+            this.selectTurma.TabIndex = 22;
             // 
             // label3
             // 
@@ -144,13 +137,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 681);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.selectTurma);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.selectAluno);
+            this.Controls.Add(this.inputAlunoFalta);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.matricularButton);
             this.Controls.Add(this.label1);
             this.Name = "DirectorEnrollStudent";
             this.Text = "DirectorIndex";
@@ -162,12 +155,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Button matricularButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox inputAlunoFalta;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox selectAluno;
         private System.Windows.Forms.ComboBox selectTurma;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
     }
 }

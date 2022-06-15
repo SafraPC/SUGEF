@@ -52,5 +52,27 @@ namespace SUGEF.Model.Director
                 this.connect.Close();
             }
         }
+
+        public bool EnrollUser(string userId, string turmaId,string qtdFalta)
+        {
+            try
+            {
+                this.connect.Open();
+                UserModel professorSelect = new UserModel();
+                MySqlCommand command = new MySqlCommand("INSERT INTO Matricula VALUES" +
+                    $" (default,'{userId}','{turmaId}','{qtdFalta}');", this.connect);
+                MySqlDataReader reader = command.ExecuteReader();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
+            }
+            finally
+            {
+                this.connect.Close();
+            }
+        }
     }
 }

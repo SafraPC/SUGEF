@@ -105,6 +105,12 @@
     <Compile Include="Helpers\AutomatizeScreen.cs" />
     <Compile Include="Helpers\ShowForm.cs" />
     <Compile Include="Services\ConnectDB.cs" />
+    <Compile Include="View\Director\DirectorCreateSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Director\DirectorCreateSubject.Designer.cs">
+      <DependentUpon>DirectorCreateSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Director\DirectorEnrollStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     <Compile Include="View\Student\StudentIndex.Designer.cs">
       <DependentUpon>StudentIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Director\DirectorCreateSubject.resx">
+      <DependentUpon>DirectorCreateSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Director\DirectorEnrollStudent.resx">
       <DependentUpon>DirectorEnrollStudent.cs</DependentUpon>
     </EmbeddedResource>

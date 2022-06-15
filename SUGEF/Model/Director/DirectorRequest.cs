@@ -1,11 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
+using SUGEF.Controller.Student;
 using SUGEF.Services;
 using System;
 using System.Diagnostics;
 
 namespace SUGEF.Model.Director
 {
-    internal class DirectorModel
+    public class DirectorRequest
     {
         private MySqlConnection connect = new ConnectDB().Connection();
         public bool CreateUser(string userName, string userType, string userLogin, string userSenha, 
@@ -21,6 +22,27 @@ namespace SUGEF.Model.Director
             }
 
             catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
+            }
+            finally
+            {
+                this.connect.Close();
+            }
+        }
+
+        public bool CreateTurma(string idMateria, string periodo, string ano,string totalFaltas)
+        {
+            try
+            {
+                this.connect.Open();
+                UserModel professorSelect = new UserModel();
+                MySqlCommand command = new MySqlCommand("INSERT INTO Turma VALUES" +
+                    $" (default,'{idMateria}','{periodo}','{ano}','{totalFaltas}');", this.connect);
+                MySqlDataReader reader = command.ExecuteReader();
+                return true;    
+            }catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
                 return false;

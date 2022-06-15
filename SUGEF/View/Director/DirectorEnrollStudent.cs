@@ -14,8 +14,8 @@ namespace SUGEF.View.Director
 {
     public partial class DirectorEnrollStudent : Form
     {
-        UserController director = null;
-        public DirectorEnrollStudent(UserController director)
+        UserModel director = null;
+        public DirectorEnrollStudent(UserModel director)
         {
             InitializeComponent();
             this.director = director;

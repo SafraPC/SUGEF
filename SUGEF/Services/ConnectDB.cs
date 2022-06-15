@@ -36,7 +36,7 @@ namespace SUGEF.Services
             return this.connect;
         }
 
-        public UserController Login(string login, string senha)
+        public UserModel Login(string login, string senha)
         {
             try
             {
@@ -44,11 +44,10 @@ namespace SUGEF.Services
                 {
                     Connect();
                 }
-
                 this.connect.Open();
                 MySqlCommand command = new MySqlCommand("SELECT * FROM Users WHERE userLogin = '"+login+"' AND userSenha = '"+senha+"'", this.connect);
                 MySqlDataReader reader = command.ExecuteReader();
-                UserController user = new UserController();
+                UserModel user = new UserModel();
                 while (reader.Read())
                 {
                     user.UserId = int.Parse(reader.GetString("userId")); 

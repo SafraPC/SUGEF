@@ -9,8 +9,8 @@ namespace SUGEF.Utils
     class StudentSidebar : Panel
     {
         private Form form;
-        private UserController student;
-        public StudentSidebar(Form form, UserController student)
+        private UserModel student;
+        public StudentSidebar(Form form, UserModel student)
         {
             this.form = form;
             this.student = student;

@@ -7,8 +7,8 @@ namespace SUGEF.View.Student
 {
     public partial class ProfessorTurmas : Form
     {
-        UserController professor;
-        public ProfessorTurmas(UserController professor)
+        UserModel professor;
+        public ProfessorTurmas(UserModel professor)
         {
             InitializeComponent();
             this.professor = professor;

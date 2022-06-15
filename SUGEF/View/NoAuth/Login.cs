@@ -28,7 +28,7 @@ namespace SUGEF
         {
             try
             {
-                UserController user = this.dataQuerys.Login(this.inputLogin.Text, this.inputPassword.Text);
+                UserModel user = this.dataQuerys.Login(this.inputLogin.Text, this.inputPassword.Text);
                 if (user != null)
                 {
                     if (user.UserTipo == "Aluno")

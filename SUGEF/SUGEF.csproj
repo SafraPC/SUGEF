@@ -100,7 +100,7 @@
     <Compile Include="Components\Sidebar\StudentSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Model\Director\DirectorModel.cs" />
+    <Compile Include="Model\Director\DirectorRequest.cs" />
     <Compile Include="Model\NoAuth\UserModel.cs" />
     <Compile Include="Helpers\AutomatizeScreen.cs" />
     <Compile Include="Helpers\ShowForm.cs" />

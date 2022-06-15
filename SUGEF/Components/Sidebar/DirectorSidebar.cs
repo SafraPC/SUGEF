@@ -9,8 +9,8 @@ namespace SUGEF.Utils
     class DirectorSidebar : Panel
     {
         private Form form;
-        private UserController director;
-        public DirectorSidebar(Form form, UserController director)
+        private UserModel director;
+        public DirectorSidebar(Form form, UserModel director)
         {
             this.form = form;
             this.director = director;

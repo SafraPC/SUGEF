@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SUGEF.Controller.Student
+﻿namespace SUGEF.Controller.Student
 {
-    public class UserController
+    public class UserModel
     {
 
         private string userName, userTipo, userLogin, userSenha, userNascimento, userCpf, userFoto;

@@ -14,8 +14,8 @@ namespace SUGEF.View.Professor
 {
     public partial class ProfessorIndex : Form
     {
-        UserController professor;
-        public ProfessorIndex(UserController professor)
+        UserModel professor;
+        public ProfessorIndex(UserModel professor)
         {
             InitializeComponent();
             this.professor = professor;

@@ -10,8 +10,8 @@ namespace SUGEF.Utils
     class ProfessorSidebar : Panel
     {
         private Form form;
-        private UserController professor;
-        public ProfessorSidebar(Form form, UserController professor)
+        private UserModel professor;
+        public ProfessorSidebar(Form form, UserModel professor)
         {
             this.form = form;
             this.professor = professor;

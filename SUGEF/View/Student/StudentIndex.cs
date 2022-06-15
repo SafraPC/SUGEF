@@ -6,8 +6,8 @@ namespace SUGEF.View.Student
 {
     public partial class StudentIndex : Form
     {
-        UserController student;
-        public StudentIndex(UserController student)
+        UserModel student;
+        public StudentIndex(UserModel student)
         {
             InitializeComponent();
             this.student = student;

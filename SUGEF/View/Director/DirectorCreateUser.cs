@@ -9,9 +9,9 @@ namespace SUGEF.View.Director
 {
     public partial class DirectorCreateUser : Form
     {
-        UserController director = null;
-        DirectorModel directorModel = new DirectorModel();
-        public DirectorCreateUser(UserController director)
+        UserModel director = null;
+        DirectorRequest directorModel = new DirectorRequest();
+        public DirectorCreateUser(UserModel director)
         {
             InitializeComponent();
             this.director = director;

@@ -1,6 +1,6 @@
-﻿namespace SUGEF.View.Director
+﻿namespace SUGEF.View.Professor
 {
-    partial class DirectorIndex
+    partial class ProfessorClass
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.flowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // label1
+            // flowPanel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(442, 303);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 48);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Seja bem-vindo!";
+            this.flowPanel.AutoScroll = true;
+            this.flowPanel.Location = new System.Drawing.Point(325, 12);
+            this.flowPanel.Name = "flowPanel";
+            this.flowPanel.Size = new System.Drawing.Size(729, 657);
+            this.flowPanel.TabIndex = 2;
             // 
-            // DirectorIndex
+            // ProfessorClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 681);
-            this.Controls.Add(this.label1);
-            this.Name = "DirectorIndex";
-            this.Text = "DirectorIndex";
+            this.Controls.Add(this.flowPanel);
+            this.Name = "ProfessorClass";
+            this.Text = "ProfessorIndex";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowPanel;
     }
 }

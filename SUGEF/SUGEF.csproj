@@ -149,6 +149,12 @@
     <Compile Include="Components\Sidebar\GradientSidebar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="View\Professor\ProfessorClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Professor\ProfessorClass.Designer.cs">
+      <DependentUpon>ProfessorClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Professor\ProfessorIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Professor\ProfessorClass.resx">
+      <DependentUpon>ProfessorClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Professor\ProfessorIndex.resx">
       <DependentUpon>ProfessorIndex.cs</DependentUpon>
     </EmbeddedResource>

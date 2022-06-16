@@ -41,7 +41,7 @@ namespace SUGEF.View.Student
                 professorTurmas.ForEach(item =>
                 {
                     Debug.WriteLine(item);
-                    this.flowPanel.Controls.Add(card.CreateTurmasPanel(item));
+                    this.flowPanel.Controls.Add(card.CreateTurmasPanel(item,this,professor));
                 });
             }
             catch (Exception ex)
@@ -52,8 +52,6 @@ namespace SUGEF.View.Student
             {
                 connect.Close();
             }
-
-
         }
     }
 }

@@ -99,3 +99,4 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.Direct
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.ProfessorTurmas.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorEnrollStudent.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateSubject.resources
+C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorClass.resources

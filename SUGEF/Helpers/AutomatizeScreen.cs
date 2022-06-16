@@ -12,9 +12,9 @@ namespace SUGEF.Helpers
     {
         private void AutomatizeForm(Form actualForm)
         {
-            actualForm.Size = new System.Drawing.Size(1080, 720);
-            actualForm.ClientSize = new System.Drawing.Size(1080, 720);
+
             actualForm.StartPosition = FormStartPosition.CenterScreen;
+            actualForm.MaximizeBox = false;
             actualForm.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 

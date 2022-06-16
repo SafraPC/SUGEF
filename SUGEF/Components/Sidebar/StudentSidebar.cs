@@ -20,7 +20,7 @@ namespace SUGEF.Utils
         {
             this.BackColor = Color.FromArgb(30, 60, 114);
             this.Location = new Point(0, 0);
-            this.Size = new Size(290, 720);
+            this.Size = new Size(290, this.form.Height);
             base.OnPaint(e);
             //Create picture and data
 

@@ -21,10 +21,9 @@
             // flowPanel
             // 
             this.flowPanel.AutoScroll = true;
-            this.flowPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowPanel.Location = new System.Drawing.Point(296, 12);
+            this.flowPanel.Location = new System.Drawing.Point(299, 12);
             this.flowPanel.Name = "flowPanel";
-            this.flowPanel.Size = new System.Drawing.Size(772, 696);
+            this.flowPanel.Size = new System.Drawing.Size(769, 696);
             this.flowPanel.TabIndex = 1;
             // 
             // ProfessorTurmas

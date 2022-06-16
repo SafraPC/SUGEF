@@ -57,14 +57,57 @@ namespace SUGEF.Components.Cards
 
             return panel;
         }
+
+        private void CreateInputStudentField(int x,string title,string notasText, Panel panel)
+        {
+            TextBox studentNota = new TextBox();
+            studentNota.Size = new Size(50, 40);
+            studentNota.Font = new Font("Cambria", 14, FontStyle.Regular);
+            studentNota.Location = new Point(x, 60);
+            studentNota.Text = notasText;
+            panel.Controls.Add(studentNota);
+
+            Label studentNotaLabel = new Label();
+            studentNotaLabel.Location = new Point(x-60, 65);
+            studentNotaLabel.Size = new Size(60, 40);
+            studentNotaLabel.Font = new Font("Cambria", 12, FontStyle.Regular);
+            studentNotaLabel.ForeColor = Color.Black;
+            studentNotaLabel.Text = title;
+            panel.Controls.Add(studentNotaLabel);
+        }
         
         public void CreateStudentPanel(FlowLayoutPanel flowPanel, string userId, string matriculaId, string turmaId, string notasId,
           string userName, string nota1, string nota2, string nota3, string nota4, string totalFaltas  )
         {
             Panel panel = new Panel();
-            panel.Size = new Size(flowPanel.Width-50, 150);
-            panel.BorderStyle = BorderStyle.Fixed3D;
-            panel.BackColor = Color.Azure;
+            panel.Size = new Size(flowPanel.Width-50, 200);
+            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BackColor = Color.White;
+
+            Label studentName = new Label();
+            studentName.Location = new Point(20, 10);
+            studentName.Size = new Size(150,30);
+            studentName.Font = new Font("Cambria", 16, FontStyle.Regular);
+            studentName.ForeColor = Color.Black;
+            studentName.Text = userName;
+            panel.Controls.Add(studentName);
+
+            CreateInputStudentField(80,"Nota 1:", nota1,panel);
+            CreateInputStudentField(200, "Nota 2:", nota2, panel);
+            CreateInputStudentField(320, "Nota 3:", nota3, panel);
+            CreateInputStudentField(440, "Nota 4:", nota4, panel);
+            CreateInputStudentField(560, "Faltas:", totalFaltas, panel);
+
+            Button handleSubmit = new Button();
+            handleSubmit.Location = new Point((flowPanel.Width / 2) - 80,130);
+            handleSubmit.Size = new Size(120, 50);
+            handleSubmit.Text = "Alterar";
+            handleSubmit.BackColor = Color.Azure;
+            handleSubmit.FlatStyle = FlatStyle.Popup;
+            handleSubmit.Cursor = Cursors.Hand;
+            handleSubmit.Font = new Font("Cambria", 13, FontStyle.Regular);
+            panel.Controls.Add(handleSubmit);
+
             flowPanel.Controls.Add(panel);
         }
     }

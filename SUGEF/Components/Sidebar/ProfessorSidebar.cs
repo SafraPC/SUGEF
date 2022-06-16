@@ -30,8 +30,8 @@ namespace SUGEF.Utils
             //Create Panels
             sidebarElements.CreateSidebarElement("Turmas", "users", 150, new ProfessorTurmas(this.professor));
 
-            sidebarElements.CreateSidebarElement("Configurações","settings",600,new ProfessorIndex(this.professor));
-            sidebarElements.CreateSidebarElement("Sair", "logout", 650, new LoginForm());
+            sidebarElements.CreateSidebarElement("Configurações","settings", this.form.Height-100, new ProfessorIndex(this.professor));
+            sidebarElements.CreateSidebarElement("Sair", "logout", this.form.Height-50, new LoginForm());
         }
 
     }

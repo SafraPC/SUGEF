@@ -19,7 +19,7 @@ namespace SUGEF.Utils
             Graphics graph = e.Graphics;
             graph.FillRectangle(lgb,this.ClientRectangle);
             this.Location = new Point(0, 0);
-            this.Size = new Size(290, 720);
+            this.Size = new Size(290, 2000);
             base.OnPaint(e);
            
         }

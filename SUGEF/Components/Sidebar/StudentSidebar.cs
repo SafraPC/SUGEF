@@ -30,8 +30,8 @@ namespace SUGEF.Utils
             sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentTurmas(this.student));
             sidebarElements.CreateSidebarElement("Notas e Boletins", "file", 200, new StudentNotas(this.student));
 
-            sidebarElements.CreateSidebarElement("Configurações","settings",600,new StudentConfig(this.student));
-            sidebarElements.CreateSidebarElement("Sair", "logout", 650, new LoginForm());
+            sidebarElements.CreateSidebarElement("Configurações","settings", this.form.Height-100, new StudentConfig(this.student));
+            sidebarElements.CreateSidebarElement("Sair", "logout", this.form.Height-50, new LoginForm());
         }
 
     }

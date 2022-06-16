@@ -57,11 +57,30 @@ namespace SUGEF.Model.Director
         {
             try
             {
+                string matriculaId = "";
                 this.connect.Open();
                 UserModel professorSelect = new UserModel();
                 MySqlCommand command = new MySqlCommand("INSERT INTO Matricula VALUES" +
                     $" (default,'{userId}','{turmaId}','{qtdFalta}');", this.connect);
                 MySqlDataReader reader = command.ExecuteReader();
+                this.connect.Close();
+                this.connect.Open();
+
+                MySqlCommand command2 = new MySqlCommand("SELECT matriculaId from Matricula" +
+                  $" WHERE userId='{userId}' and turmaId='{turmaId}' and totalFaltas='{qtdFalta}'", this.connect);
+                MySqlDataReader reader2 = command2.ExecuteReader();
+
+                while (reader2.Read())
+                {
+                    matriculaId = reader2.GetString("matriculaId");
+                }
+                this.connect.Close();
+                this.connect.Open();
+
+                MySqlCommand command3 = new MySqlCommand("INSERT INTO Notas VALUES" +
+                  $" (default,'{matriculaId}','{userId}',0,0,0,0);", this.connect);
+                MySqlDataReader reader3 = command3.ExecuteReader();
+                this.connect.Close();
                 return true;
             }
             catch (Exception ex)

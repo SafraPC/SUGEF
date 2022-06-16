@@ -40,9 +40,8 @@ namespace SUGEF.View.Student
                 }
                 professorTurmas.ForEach(item =>
                 {
-                    Debug.WriteLine(item);  
-                    this.flowPanel.Controls.Add(card.CreateTurmasPanel(item?.Split('|')[1], "Turma: "+item?.Split('|')[0] + "\n" +
-                        "Período"+(item?.Split('|')[3])));
+                    Debug.WriteLine(item);
+                    this.flowPanel.Controls.Add(card.CreateTurmasPanel(item));
                 });
             }
             catch (Exception ex)

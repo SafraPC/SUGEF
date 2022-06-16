@@ -1,7 +1,9 @@
-﻿using SUGEF.Controller.Student;
+﻿using MySql.Data.MySqlClient;
+using SUGEF.Controller.Student;
 using SUGEF.Helpers;
 using SUGEF.View.Professor;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -58,26 +60,29 @@ namespace SUGEF.Components.Cards
             return panel;
         }
 
-        private void CreateInputStudentField(int x,string title,string notasText, Panel panel)
+        private TextBox CreateInputStudentField(int x,string title,string notasText, Panel panel)
         {
             TextBox studentNota = new TextBox();
             studentNota.Size = new Size(50, 40);
             studentNota.Font = new Font("Cambria", 14, FontStyle.Regular);
-            studentNota.Location = new Point(x, 60);
+            studentNota.Location = new Point(x, 70);
             studentNota.Text = notasText;
             panel.Controls.Add(studentNota);
 
+
             Label studentNotaLabel = new Label();
-            studentNotaLabel.Location = new Point(x-60, 65);
+            studentNotaLabel.Location = new Point(x-60, 75);
             studentNotaLabel.Size = new Size(60, 40);
             studentNotaLabel.Font = new Font("Cambria", 12, FontStyle.Regular);
             studentNotaLabel.ForeColor = Color.Black;
             studentNotaLabel.Text = title;
             panel.Controls.Add(studentNotaLabel);
+
+            return studentNota;
         }
         
-        public void CreateStudentPanel(FlowLayoutPanel flowPanel, string userId, string matriculaId, string turmaId, string notasId,
-          string userName, string nota1, string nota2, string nota3, string nota4, string totalFaltas  )
+        public void CreateStudentPanel(FlowLayoutPanel flowPanel,  string matriculaId, string notasId,
+          string userName, string nota1, string nota2, string nota3, string nota4, string totalFaltas, MySqlConnection connect)
         {
             Panel panel = new Panel();
             panel.Size = new Size(flowPanel.Width-50, 200);
@@ -92,11 +97,11 @@ namespace SUGEF.Components.Cards
             studentName.Text = userName;
             panel.Controls.Add(studentName);
 
-            CreateInputStudentField(80,"Nota 1:", nota1,panel);
-            CreateInputStudentField(200, "Nota 2:", nota2, panel);
-            CreateInputStudentField(320, "Nota 3:", nota3, panel);
-            CreateInputStudentField(440, "Nota 4:", nota4, panel);
-            CreateInputStudentField(560, "Faltas:", totalFaltas, panel);
+            TextBox nota1Input = CreateInputStudentField(80,"Nota 1:", nota1,panel);
+            TextBox nota2Input = CreateInputStudentField(200, "Nota 2:", nota2, panel);
+            TextBox nota3Input = CreateInputStudentField(320, "Nota 3:", nota3, panel);
+            TextBox nota4Input = CreateInputStudentField(440, "Nota 4:", nota4, panel);
+            TextBox faltasInput = CreateInputStudentField(560, "Faltas:", totalFaltas, panel);
 
             Button handleSubmit = new Button();
             handleSubmit.Location = new Point((flowPanel.Width / 2) - 80,130);
@@ -106,7 +111,35 @@ namespace SUGEF.Components.Cards
             handleSubmit.FlatStyle = FlatStyle.Popup;
             handleSubmit.Cursor = Cursors.Hand;
             handleSubmit.Font = new Font("Cambria", 13, FontStyle.Regular);
-            panel.Controls.Add(handleSubmit);
+            handleSubmit.Click += (object sender, EventArgs e) =>
+            {
+                try
+                {
+                    connect.Open();
+                    UserModel professorSelect = new UserModel();
+                    MySqlCommand command = new MySqlCommand("UPDATE Notas SET "+
+                        $"nota1={nota1Input.Text}, nota2={nota2Input.Text}, nota3={nota3Input.Text}, nota4={nota4Input.Text} WHERE notasId={notasId}", connect);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    connect.Close();
+
+                    connect.Open();
+                    MySqlCommand command2 = new MySqlCommand("UPDATE Matricula SET " +
+                        $"totalFaltas={faltasInput.Text} WHERE matriculaId={matriculaId}", connect);
+                    MySqlDataReader reader2 = command2.ExecuteReader();
+                    connect.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Infelizmente houve um erro!","Houve um erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Debug.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            };
+             panel.Controls.Add(handleSubmit);
 
             flowPanel.Controls.Add(panel);
         }

@@ -37,10 +37,9 @@ namespace SUGEF.View.Professor
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    this.professorCard.CreateStudentPanel(this.flowPanel,reader.GetString("userId"), reader.GetString("matriculaId"), 
-                        reader.GetString("turmaId"),
+                    this.professorCard.CreateStudentPanel(this.flowPanel, reader.GetString("matriculaId"), 
                         reader.GetString("notasId"), reader.GetString("userName"), reader.GetString("nota1"), reader.GetString("nota2"), reader.GetString("nota3"),
-                        reader.GetString("nota4"), reader.GetString("totalFaltas"));
+                        reader.GetString("nota4"), reader.GetString("totalFaltas"),connect);
                 }
             }
             catch (Exception ex)

@@ -34,7 +34,7 @@ namespace SUGEF.Utils
             sidebarElements.CreateSidebarElement("Pesquisar", "file", 350, new DirectorIndex(this.director));
 
 
-            sidebarElements.CreateSidebarElement("Sair", "logout", this.form.Height-150, new LoginForm());
+            sidebarElements.CreateSidebarElement("Sair", "logout", this.form.Height- 120, new LoginForm());
         }
 
     }

@@ -31,7 +31,8 @@ namespace SUGEF.View.Student
             {
                 connect.Open();
                 List<string> professorTurmas = new List<string>();
-                MySqlCommand command = new MySqlCommand($"SELECT * FROM Materia INNER JOIN Turma on Turma.materiaId = Materia.materiaId WHERE userId = {professor.UserId}; ", this.connect);
+                MySqlCommand command = new MySqlCommand($"SELECT * FROM Materia " +
+                    $"INNER JOIN Turma on Turma.materiaId = Materia.materiaId WHERE userId = {professor.UserId}; ", this.connect);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
@@ -40,7 +41,6 @@ namespace SUGEF.View.Student
                 }
                 professorTurmas.ForEach(item =>
                 {
-                    Debug.WriteLine(item);
                     this.flowPanel.Controls.Add(card.CreateTurmasPanel(item,this,professor));
                 });
             }

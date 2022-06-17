@@ -22,9 +22,6 @@ namespace SUGEF
             new SetButtonHover(this.loginButton, Color.Green);
             new SetPlaceholder(this.inputLogin, "Insira seu Login");
             new SetPlaceholder(this.inputPassword, "Insira sua Senha");
-            this.label1.Location = new Point(40, 50);
-            this.label2.Location = new Point(40, 120);
-
         }
 
         private void loginButton_Click(object sender, EventArgs e)

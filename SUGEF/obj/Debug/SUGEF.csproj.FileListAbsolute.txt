@@ -49,8 +49,6 @@ C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Memory.xml
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.csproj.CopyComplete
-C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentView.resources
-C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.ConfigUser.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\bin\Debug\SUGEF.exe.config
 C:\Users\leand\Documents\github\SUGEF\SUGEF\bin\Debug\SUGEF.exe
 C:\Users\leand\Documents\github\SUGEF\SUGEF\bin\Debug\SUGEF.pdb
@@ -100,3 +98,15 @@ C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.Profess
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorEnrollStudent.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateSubject.resources
 C:\Users\leand\Documents\github\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorClass.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateSubject.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorEnrollStudent.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateTurma.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorCreateUser.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Director.DirectorIndex.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorClass.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorIndex.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.ProfessorTurmas.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentTurmas.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentConfig.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentNotas.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentIndex.resources

@@ -35,9 +35,6 @@
             this.inputLogin = new System.Windows.Forms.TextBox();
             this.inputPassword = new System.Windows.Forms.TextBox();
             this.gradientSidebar1 = new SUGEF.Utils.GradientSidebar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.gradientSidebar1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -77,24 +74,8 @@
             this.gradientSidebar1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.gradientSidebar1.ColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(222)))));
             this.gradientSidebar1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(114)))));
-            this.gradientSidebar1.Controls.Add(this.label1);
-            this.gradientSidebar1.Controls.Add(this.label2);
             resources.ApplyResources(this.gradientSidebar1, "gradientSidebar1");
             this.gradientSidebar1.Name = "gradientSidebar1";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Name = "label2";
             // 
             // LoginForm
             // 
@@ -110,7 +91,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "LoginForm";
-            this.gradientSidebar1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,8 +102,6 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.TextBox inputLogin;
         private System.Windows.Forms.TextBox inputPassword;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private Utils.GradientSidebar gradientSidebar1;
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
-    public partial class StudentTurmas: Form
+    public partial class StudentTurmas : Form
     {
         private UserModel student;
         private MySqlConnection connect = new ConnectDB().Connection();
@@ -42,7 +42,6 @@ namespace SUGEF.View.Student
                 }
                 studentTurmas.ForEach(item =>
                 {
-                    Debug.WriteLine(item);
                     this.flowPanel.Controls.Add(studentCard.CreateTurmasPanel(item, this, student));
                 });
             }

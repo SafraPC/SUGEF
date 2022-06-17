@@ -27,7 +27,7 @@ namespace SUGEF.Utils
             SidebarProps sidebarElements = new SidebarProps(this,this.form);
             sidebarElements.CreateHeader(student.UserName,student.UserCpf);
             //Create Panels
-            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentClass(this.student));
+            sidebarElements.CreateSidebarElement("Turmas", "users", 150, new StudentTurmas(this.student));
             sidebarElements.CreateSidebarElement("Notas e Boletins", "file", 200, new StudentNotas(this.student));
 
             sidebarElements.CreateSidebarElement("Sair", "logout", this.form.Height- 120, new LoginForm());

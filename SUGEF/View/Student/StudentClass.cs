@@ -15,8 +15,10 @@ namespace SUGEF.View.Student
         private UserModel student;
         private MySqlConnection connect = new ConnectDB().Connection();
         private StudentCard studentCard = new StudentCard();
-        public StudentClass(UserModel student)
+        string turma;
+        public StudentClass(UserModel student, string turmaId)
         {
+            this.turma = turmaId;
             InitializeComponent();
             this.student = student;
             AutomatizeScreen formConfig = new AutomatizeScreen(this);
@@ -30,17 +32,15 @@ namespace SUGEF.View.Student
             {
                 connect.Open();
                 List<string> studentTurmas = new List<string>();
-                MySqlCommand command = new MySqlCommand("", this.connect);
+                MySqlCommand command = new MySqlCommand("SELECT Users.userName FROM Turma INNER JOIN Matricula " +
+                    "ON Matricula.turmaId = Turma.turmaId INNER JOIN Users ON Users.userId = Matricula.userId " +
+                    $"WHERE Turma.turmaId = {this.turma};", this.connect);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    //studentTurmas.Add(reader.GetString("turmaId") + "|" + reader.GetString("materiaNome") + "|" + reader.GetString("turmaPeriodo") + "|" +
-                    //    reader.GetString("turmaAno"));
+                    this.flowPanel.Controls.Add(studentCard.CreateStudentCard(reader.GetString("userName")));
                 }
-                //studentTurmas.ForEach(item =>
-                //{
-                //    this.flowPanel.Controls.Add(studentCard.CreateTurmasPanel(item, this, student));
-                //});
+               
             }
             catch (Exception ex)
             {

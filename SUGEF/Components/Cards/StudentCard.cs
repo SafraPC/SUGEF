@@ -1,4 +1,6 @@
 ﻿using SUGEF.Controller.Student;
+using SUGEF.Helpers;
+using SUGEF.View.Student;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -45,7 +47,7 @@ namespace SUGEF.Components.Cards
             button.Cursor = Cursors.Hand;
             button.Click += (object sender, EventArgs e) =>
             {
-                
+                new ShowForm(form,new StudentClass(user,turma));
             };
             button.Text = "Acessar";
             button.Size = new Size(145, 40);
@@ -55,9 +57,20 @@ namespace SUGEF.Components.Cards
             return panel;
         }
 
-        public Panel CreateStudentCard()
+        public Panel CreateStudentCard(string studentName)
         {
-            return new Panel();
+            Panel panel = new Panel();
+            panel.Size = new Size(150, 100);
+            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BackColor = Color.White;
+
+            Label title = new Label();
+            title.Size = new Size(panel.Width, panel.Height);
+            title.Text = studentName;
+            title.TextAlign = ContentAlignment.MiddleCenter;
+
+            panel.Controls.Add(title);
+            return panel;
         }
 
     }

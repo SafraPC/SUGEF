@@ -107,6 +107,6 @@ C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Profess
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Professor.ProfessorIndex.resources
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.ProfessorTurmas.resources
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentTurmas.resources
-C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentConfig.resources
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentNotas.resources
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentIndex.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentClass.resources

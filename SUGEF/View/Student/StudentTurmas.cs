@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace SUGEF.View.Student
 {
-    public partial class StudentClass : Form
+    public partial class StudentTurmas: Form
     {
         private UserModel student;
         private MySqlConnection connect = new ConnectDB().Connection();
         private StudentCard studentCard = new StudentCard();
-        public StudentClass(UserModel student)
+        public StudentTurmas(UserModel student)
         {
             InitializeComponent();
             this.student = student;
@@ -30,17 +30,21 @@ namespace SUGEF.View.Student
             {
                 connect.Open();
                 List<string> studentTurmas = new List<string>();
-                MySqlCommand command = new MySqlCommand("", this.connect);
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Matricula INNER JOIN Turma ON " +
+                " Turma.turmaId = Matricula.turmaId " +
+                " INNER JOIN Materia ON Turma.materiaId = Materia.materiaId " +
+                $" WHERE Matricula.userId = {student.UserId}; ", this.connect);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    //studentTurmas.Add(reader.GetString("turmaId") + "|" + reader.GetString("materiaNome") + "|" + reader.GetString("turmaPeriodo") + "|" +
-                    //    reader.GetString("turmaAno"));
+                    studentTurmas.Add(reader.GetString("turmaId") + "|" + reader.GetString("materiaNome") + "|" + reader.GetString("turmaPeriodo") + "|" +
+                        reader.GetString("turmaAno"));
                 }
-                //studentTurmas.ForEach(item =>
-                //{
-                //    this.flowPanel.Controls.Add(studentCard.CreateTurmasPanel(item, this, student));
-                //});
+                studentTurmas.ForEach(item =>
+                {
+                    Debug.WriteLine(item);
+                    this.flowPanel.Controls.Add(studentCard.CreateTurmasPanel(item, this, student));
+                });
             }
             catch (Exception ex)
             {

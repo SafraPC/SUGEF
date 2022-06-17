@@ -173,11 +173,11 @@
     <Compile Include="View\Student\StudentTurmas.Designer.cs">
       <DependentUpon>StudentTurmas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Student\StudentConfig.cs">
+    <Compile Include="View\Student\StudentClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Student\StudentConfig.Designer.cs">
-      <DependentUpon>StudentConfig.cs</DependentUpon>
+    <Compile Include="View\Student\StudentClass.Designer.cs">
+      <DependentUpon>StudentClass.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Student\StudentNotas.cs">
       <SubType>Form</SubType>
@@ -233,8 +233,8 @@
     <EmbeddedResource Include="View\Student\StudentTurmas.resx">
       <DependentUpon>StudentTurmas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Student\StudentConfig.resx">
-      <DependentUpon>StudentConfig.cs</DependentUpon>
+    <EmbeddedResource Include="View\Student\StudentClass.resx">
+      <DependentUpon>StudentClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Student\StudentNotas.resx">
       <DependentUpon>StudentNotas.cs</DependentUpon>

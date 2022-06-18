@@ -106,7 +106,6 @@ namespace SUGEF.View.Student
             {
                 Debug.WriteLine(ex.Message);
             }
-          
         }
     }
 }

@@ -28,7 +28,7 @@ namespace SUGEF.Components.Cards
             title.Font = new Font("Cambria", 18, FontStyle.Bold);
             title.ForeColor = Color.Black;
             title.Location = new Point(0, 20);
-            title.Size = new Size(345, 30);
+            title.Size = new Size(345, 50);
             title.Text = materiaNome;
             title.TextAlign = ContentAlignment.MiddleCenter;
             panel.Controls.Add(title);

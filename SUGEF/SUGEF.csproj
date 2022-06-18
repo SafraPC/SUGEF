@@ -92,7 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\Cards\professorsCard.cs" />
+    <Compile Include="Components\Cards\ProfessorsCard.cs" />
     <Compile Include="Components\Cards\StudentCard.cs" />
     <Compile Include="Components\Sidebar\DirectorSidebar.cs">
       <SubType>Component</SubType>

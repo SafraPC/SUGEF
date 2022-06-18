@@ -31,7 +31,6 @@ namespace SUGEF.Utils
             sidebarElements.CreateSidebarElement("Criar Usuário", "file", 200, new DirectorCreateUser(this.director));
             sidebarElements.CreateSidebarElement("Criar Matéria", "file", 250, new DirectorCreateSubject(this.director));
             sidebarElements.CreateSidebarElement("Matricular Aluno", "file", 300, new DirectorEnrollStudent(this.director));
-            sidebarElements.CreateSidebarElement("Pesquisar", "file", 350, new DirectorIndex(this.director));
 
 
             sidebarElements.CreateSidebarElement("Sair", "logout", this.form.Height- 120, new LoginForm());

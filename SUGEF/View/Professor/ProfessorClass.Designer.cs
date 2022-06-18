@@ -34,19 +34,21 @@
             // flowPanel
             // 
             this.flowPanel.AutoScroll = true;
-            this.flowPanel.Location = new System.Drawing.Point(325, 12);
+            this.flowPanel.Location = new System.Drawing.Point(433, 15);
+            this.flowPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowPanel.Name = "flowPanel";
-            this.flowPanel.Size = new System.Drawing.Size(729, 657);
+            this.flowPanel.Size = new System.Drawing.Size(972, 809);
             this.flowPanel.TabIndex = 2;
             // 
             // ProfessorClass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.ClientSize = new System.Drawing.Size(1419, 838);
             this.Controls.Add(this.flowPanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProfessorClass";
-            this.Text = "ProfessorIndex";
+            this.Text = "Turmas";
             this.ResumeLayout(false);
 
         }

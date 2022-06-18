@@ -18,7 +18,7 @@ namespace SUGEF.View.Professor
         {
             this.turma = turma;
             InitializeComponent();
-            AutomatizeScreen formConfig = new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
             formConfig.RenderSidebarProfessor(this, professor);
             SetStudentsCards();
         }

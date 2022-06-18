@@ -19,7 +19,7 @@ namespace SUGEF.View.Professor
         {
             InitializeComponent();
             this.professor = professor;
-            AutomatizeScreen formConfig = new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
             formConfig.RenderSidebarProfessor(this, professor);
         }
     }

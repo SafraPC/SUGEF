@@ -19,7 +19,7 @@ namespace SUGEF.View.Director
         {
             InitializeComponent();
             this.director = director;
-            AutomatizeScreen formConfig = new AutomatizeScreen(this, "Bem-vindo ao SUGEF!");
+            AutomatizeScreen formConfig = new AutomatizeScreen(this);
             formConfig.RenderSidebarDirector(this, director);
             setProfessors();
         }

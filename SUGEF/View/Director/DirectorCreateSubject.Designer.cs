@@ -40,9 +40,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(329, 29);
+            this.label1.Location = new System.Drawing.Point(439, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 31);
+            this.label1.Size = new System.Drawing.Size(203, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Criar Matéria";
             // 
@@ -53,10 +54,10 @@
             this.createButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createButton.ForeColor = System.Drawing.Color.Green;
             this.createButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.createButton.Location = new System.Drawing.Point(622, 311);
-            this.createButton.Margin = new System.Windows.Forms.Padding(2);
+            this.createButton.Location = new System.Drawing.Point(829, 383);
+            this.createButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(123, 47);
+            this.createButton.Size = new System.Drawing.Size(164, 58);
             this.createButton.TabIndex = 8;
             this.createButton.Text = "Criar";
             this.createButton.UseVisualStyleBackColor = false;
@@ -68,20 +69,19 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(455, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(607, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 16);
+            this.label2.Size = new System.Drawing.Size(162, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Selecione o professor";
             // 
             // inputMateria
             // 
             this.inputMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputMateria.Location = new System.Drawing.Point(458, 228);
-            this.inputMateria.Margin = new System.Windows.Forms.Padding(2);
+            this.inputMateria.Location = new System.Drawing.Point(611, 281);
+            this.inputMateria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputMateria.Name = "inputMateria";
-            this.inputMateria.Size = new System.Drawing.Size(474, 26);
+            this.inputMateria.Size = new System.Drawing.Size(631, 30);
             this.inputMateria.TabIndex = 17;
             // 
             // label6
@@ -90,10 +90,9 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(455, 195);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(607, 240);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 16);
+            this.label6.Size = new System.Drawing.Size(189, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Insira o nome da matéria";
             // 
@@ -102,24 +101,26 @@
             this.selectProfessor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectProfessor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectProfessor.FormattingEnabled = true;
-            this.selectProfessor.Location = new System.Drawing.Point(458, 127);
+            this.selectProfessor.Location = new System.Drawing.Point(611, 156);
+            this.selectProfessor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectProfessor.Name = "selectProfessor";
-            this.selectProfessor.Size = new System.Drawing.Size(474, 28);
+            this.selectProfessor.Size = new System.Drawing.Size(631, 33);
             this.selectProfessor.TabIndex = 18;
             // 
             // DirectorCreateSubject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.ClientSize = new System.Drawing.Size(1419, 838);
             this.Controls.Add(this.selectProfessor);
             this.Controls.Add(this.inputMateria);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.createButton);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DirectorCreateSubject";
-            this.Text = "DirectorIndex";
+            this.Text = "Cadastrar Matéria";
             this.ResumeLayout(false);
             this.PerformLayout();
 

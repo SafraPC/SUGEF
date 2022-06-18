@@ -42,9 +42,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(329, 29);
+            this.label1.Location = new System.Drawing.Point(439, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 31);
+            this.label1.Size = new System.Drawing.Size(255, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Matricular Aluno";
             // 
@@ -55,10 +56,10 @@
             this.matricularButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.matricularButton.ForeColor = System.Drawing.Color.Green;
             this.matricularButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.matricularButton.Location = new System.Drawing.Point(628, 382);
-            this.matricularButton.Margin = new System.Windows.Forms.Padding(2);
+            this.matricularButton.Location = new System.Drawing.Point(837, 470);
+            this.matricularButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.matricularButton.Name = "matricularButton";
-            this.matricularButton.Size = new System.Drawing.Size(123, 47);
+            this.matricularButton.Size = new System.Drawing.Size(164, 58);
             this.matricularButton.TabIndex = 8;
             this.matricularButton.Text = "Matricular";
             this.matricularButton.UseVisualStyleBackColor = false;
@@ -70,20 +71,19 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(455, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(607, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 16);
+            this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Selecione o aluno";
             // 
             // inputAlunoFalta
             // 
             this.inputAlunoFalta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputAlunoFalta.Location = new System.Drawing.Point(458, 299);
-            this.inputAlunoFalta.Margin = new System.Windows.Forms.Padding(2);
+            this.inputAlunoFalta.Location = new System.Drawing.Point(611, 368);
+            this.inputAlunoFalta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputAlunoFalta.Name = "inputAlunoFalta";
-            this.inputAlunoFalta.Size = new System.Drawing.Size(474, 26);
+            this.inputAlunoFalta.Size = new System.Drawing.Size(631, 30);
             this.inputAlunoFalta.TabIndex = 17;
             // 
             // label6
@@ -92,10 +92,9 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(455, 266);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(607, 327);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(218, 16);
+            this.label6.Size = new System.Drawing.Size(261, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Insira o total de faltas da matricula";
             // 
@@ -104,9 +103,10 @@
             this.selectAluno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectAluno.FormattingEnabled = true;
-            this.selectAluno.Location = new System.Drawing.Point(458, 127);
+            this.selectAluno.Location = new System.Drawing.Point(611, 156);
+            this.selectAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectAluno.Name = "selectAluno";
-            this.selectAluno.Size = new System.Drawing.Size(474, 28);
+            this.selectAluno.Size = new System.Drawing.Size(631, 33);
             this.selectAluno.TabIndex = 18;
             // 
             // selectTurma
@@ -114,9 +114,10 @@
             this.selectTurma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectTurma.FormattingEnabled = true;
-            this.selectTurma.Location = new System.Drawing.Point(458, 211);
+            this.selectTurma.Location = new System.Drawing.Point(611, 260);
+            this.selectTurma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectTurma.Name = "selectTurma";
-            this.selectTurma.Size = new System.Drawing.Size(474, 28);
+            this.selectTurma.Size = new System.Drawing.Size(631, 33);
             this.selectTurma.TabIndex = 22;
             // 
             // label3
@@ -125,18 +126,17 @@
             this.label3.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(455, 183);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(607, 225);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 16);
+            this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 21;
             this.label3.Text = "Selecione a turma";
             // 
             // DirectorEnrollStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.ClientSize = new System.Drawing.Size(1419, 838);
             this.Controls.Add(this.selectTurma);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.selectAluno);
@@ -145,8 +145,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.matricularButton);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DirectorEnrollStudent";
-            this.Text = "DirectorIndex";
+            this.Text = "Matricular Aluno";
             this.ResumeLayout(false);
             this.PerformLayout();
 

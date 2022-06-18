@@ -48,19 +48,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(329, 29);
+            this.label1.Location = new System.Drawing.Point(439, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 31);
+            this.label1.Size = new System.Drawing.Size(272, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Cadastrar Usuário";
             // 
             // inputNome
             // 
             this.inputNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputNome.Location = new System.Drawing.Point(458, 131);
-            this.inputNome.Margin = new System.Windows.Forms.Padding(2);
+            this.inputNome.Location = new System.Drawing.Point(611, 161);
+            this.inputNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputNome.Name = "inputNome";
-            this.inputNome.Size = new System.Drawing.Size(474, 26);
+            this.inputNome.Size = new System.Drawing.Size(631, 30);
             this.inputNome.TabIndex = 9;
             // 
             // buttonCadastrar
@@ -70,10 +71,10 @@
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCadastrar.ForeColor = System.Drawing.Color.Green;
             this.buttonCadastrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonCadastrar.Location = new System.Drawing.Point(644, 605);
-            this.buttonCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCadastrar.Location = new System.Drawing.Point(859, 745);
+            this.buttonCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCadastrar.Name = "buttonCadastrar";
-            this.buttonCadastrar.Size = new System.Drawing.Size(123, 47);
+            this.buttonCadastrar.Size = new System.Drawing.Size(164, 58);
             this.buttonCadastrar.TabIndex = 8;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
@@ -85,10 +86,9 @@
             this.label3.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(455, 98);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(607, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 16);
+            this.label3.Size = new System.Drawing.Size(108, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Insira o nome";
             // 
@@ -98,20 +98,19 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(455, 185);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(607, 228);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 16);
+            this.label2.Size = new System.Drawing.Size(203, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Selecione o tipo do usuário";
             // 
             // inputLogin
             // 
             this.inputLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputLogin.Location = new System.Drawing.Point(457, 294);
-            this.inputLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.inputLogin.Location = new System.Drawing.Point(609, 362);
+            this.inputLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputLogin.Name = "inputLogin";
-            this.inputLogin.Size = new System.Drawing.Size(475, 26);
+            this.inputLogin.Size = new System.Drawing.Size(632, 30);
             this.inputLogin.TabIndex = 13;
             // 
             // label4
@@ -120,20 +119,19 @@
             this.label4.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(454, 261);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(605, 321);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 16);
+            this.label4.Size = new System.Drawing.Size(184, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Insira o login do usuário";
             // 
             // inputPassword
             // 
             this.inputPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputPassword.Location = new System.Drawing.Point(458, 380);
-            this.inputPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.inputPassword.Location = new System.Drawing.Point(611, 468);
+            this.inputPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputPassword.Name = "inputPassword";
-            this.inputPassword.Size = new System.Drawing.Size(474, 26);
+            this.inputPassword.Size = new System.Drawing.Size(631, 30);
             this.inputPassword.TabIndex = 15;
             // 
             // label5
@@ -142,20 +140,19 @@
             this.label5.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(455, 347);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(607, 427);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 16);
+            this.label5.Size = new System.Drawing.Size(188, 20);
             this.label5.TabIndex = 14;
             this.label5.Text = "Insira a senha do usuário";
             // 
             // inputDate
             // 
             this.inputDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputDate.Location = new System.Drawing.Point(458, 464);
-            this.inputDate.Margin = new System.Windows.Forms.Padding(2);
+            this.inputDate.Location = new System.Drawing.Point(611, 571);
+            this.inputDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputDate.Name = "inputDate";
-            this.inputDate.Size = new System.Drawing.Size(474, 26);
+            this.inputDate.Size = new System.Drawing.Size(631, 30);
             this.inputDate.TabIndex = 17;
             // 
             // label6
@@ -164,10 +161,9 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(455, 431);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(607, 530);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(174, 16);
+            this.label6.Size = new System.Drawing.Size(206, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Insira a data de nascimento";
             // 
@@ -180,18 +176,19 @@
             "Aluno",
             "Professor",
             "Diretor"});
-            this.inputUserTipo.Location = new System.Drawing.Point(458, 213);
+            this.inputUserTipo.Location = new System.Drawing.Point(611, 262);
+            this.inputUserTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inputUserTipo.Name = "inputUserTipo";
-            this.inputUserTipo.Size = new System.Drawing.Size(474, 28);
+            this.inputUserTipo.Size = new System.Drawing.Size(631, 33);
             this.inputUserTipo.TabIndex = 18;
             // 
             // inputCpf
             // 
             this.inputCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.inputCpf.Location = new System.Drawing.Point(458, 545);
-            this.inputCpf.Margin = new System.Windows.Forms.Padding(2);
+            this.inputCpf.Location = new System.Drawing.Point(611, 671);
+            this.inputCpf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inputCpf.Name = "inputCpf";
-            this.inputCpf.Size = new System.Drawing.Size(474, 26);
+            this.inputCpf.Size = new System.Drawing.Size(631, 30);
             this.inputCpf.TabIndex = 20;
             // 
             // label7
@@ -200,18 +197,17 @@
             this.label7.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(455, 512);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(607, 630);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 16);
+            this.label7.Size = new System.Drawing.Size(177, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "Insira o CPF do usuário";
             // 
             // DirectorCreateUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.ClientSize = new System.Drawing.Size(1419, 838);
             this.Controls.Add(this.inputCpf);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.inputUserTipo);
@@ -226,8 +222,9 @@
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DirectorCreateUser";
-            this.Text = "DirectorIndex";
+            this.Text = "Cadastrar Usuário";
             this.ResumeLayout(false);
             this.PerformLayout();
 

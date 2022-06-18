@@ -5,7 +5,7 @@
 
         private string userName, userTipo, userLogin, userSenha, userNascimento, userCpf, userFoto;
         private int userId;
-
+      
         public string UserName { get => userName; set => userName = value; }
         public string UserTipo { get => userTipo; set => userTipo = value; }
         public string UserLogin { get => userLogin; set => userLogin = value; }

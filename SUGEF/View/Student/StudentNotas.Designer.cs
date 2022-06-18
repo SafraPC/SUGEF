@@ -26,6 +26,7 @@
             this.n4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.media = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pdfButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,12 +49,12 @@
             this.media,
             this.situacao});
             this.table.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.table.Location = new System.Drawing.Point(361, 13);
-            this.table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.table.Location = new System.Drawing.Point(361, 60);
+            this.table.Margin = new System.Windows.Forms.Padding(4);
             this.table.Name = "table";
             this.table.ReadOnly = true;
             this.table.RowHeadersWidth = 51;
-            this.table.Size = new System.Drawing.Size(1066, 775);
+            this.table.Size = new System.Drawing.Size(1066, 728);
             this.table.TabIndex = 7;
             // 
             // disciplina
@@ -136,11 +137,25 @@
             this.situacao.ReadOnly = true;
             this.situacao.Width = 125;
             // 
+            // pdfButton
+            // 
+            this.pdfButton.BackColor = System.Drawing.Color.White;
+            this.pdfButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pdfButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pdfButton.Location = new System.Drawing.Point(1294, 12);
+            this.pdfButton.Name = "pdfButton";
+            this.pdfButton.Size = new System.Drawing.Size(133, 41);
+            this.pdfButton.TabIndex = 8;
+            this.pdfButton.Text = "PDF";
+            this.pdfButton.UseVisualStyleBackColor = false;
+            this.pdfButton.Click += new System.EventHandler(this.pdfButton_Click);
+            // 
             // StudentNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 886);
+            this.Controls.Add(this.pdfButton);
             this.Controls.Add(this.table);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StudentNotas";
@@ -160,5 +175,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn n4;
         private System.Windows.Forms.DataGridViewTextBoxColumn media;
         private System.Windows.Forms.DataGridViewTextBoxColumn situacao;
+        private System.Windows.Forms.Button pdfButton;
     }
 }

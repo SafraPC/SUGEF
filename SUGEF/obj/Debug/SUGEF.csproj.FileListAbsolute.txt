@@ -110,3 +110,5 @@ C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentNotas.resources
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentIndex.resources
 C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\obj\Debug\SUGEF.View.Student.StudentClass.resources
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\itextsharp.dll
+C:\Users\leand\Documents\github\safraPC\SUGEF\SUGEF\bin\Debug\itextsharp.xml
